@@ -1,0 +1,17 @@
+<div class="headline pt-5">
+  <h4 >Following are the Regular events</h4>
+</div>
+<div class="row mt-5">
+        <div class="col-md-2 mb-3" *ngFor="let events of events">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="firstName" >Member </h5>
+              <p class="card-text">{{ events.firstName }}</p>
+              <p class="card-text">{{ events.lastName }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
