@@ -23,5 +23,5 @@ app.get('/', (req, res) => {
   });
 
 app.listen(port, () => {
-  console.log('app fired up on ' + port);
+  console.log('app fired up on port' + port);
 });
