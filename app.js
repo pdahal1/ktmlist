@@ -9,7 +9,7 @@ const port = process.env.PORT || 8080;
 
 const app = express(); 
 app.use(bodyParser.json());
-app.use(cors({ origin: 'http://localhost:4200' }));
+app.use(cors({ origin: '*' }));
 app.use( express.static(path.join(__dirname, 'public')));
  
 app.use('/register', registrationController ); 
