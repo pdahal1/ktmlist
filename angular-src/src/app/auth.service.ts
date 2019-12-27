@@ -6,10 +6,10 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AuthService {
-  readonly url = "http://localhost:8080/register"; 
-  readonly loginurl = "http://localhost:8080/register/login"; 
-  readonly accountUrl= "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/register/account";
-  readonly listingUrl= "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/listings"; 
+  readonly url = "register"; 
+  readonly loginurl = "register/login"; 
+  readonly accountUrl= "register/account";
+  readonly listingUrl= "registrations/listings"; 
 
   constructor(private http: HttpClient, private router: Router) { }
  
