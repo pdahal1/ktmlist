@@ -1953,10 +1953,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.http = http;
         this.router = router;
-        this.url = "register";
-        this.loginurl = "register/login";
-        this.accountUrl = "register/account";
-        this.listingUrl = "listings";
+        this.url = "http://localhost:8080/register";
+        this.loginurl = "http://localhost:8080/register/login";
+        this.accountUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/register/account";
+        this.listingUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/listings";
       }
 
       _createClass(AuthService, [{
@@ -2068,10 +2068,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, EventService);
 
         this.http = http;
-        this._url = "register";
-        this.getAccountUrl = "register/account";
-        this.loginurl = "register/login";
-        this.entryUrl = "register/entries";
+        this._url = "http://localhost:8080/register";
+        this.getAccountUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/register/account";
+        this.loginurl = "http://localhost:8080/register/login";
+        this.entryUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/register/entries";
       }
 
       _createClass(EventService, [{

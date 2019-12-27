@@ -1003,10 +1003,10 @@ let AuthService = class AuthService {
     constructor(http, router) {
         this.http = http;
         this.router = router;
-        this.url = "register";
-        this.loginurl = "register/login";
-        this.accountUrl = "register/account";
-        this.listingUrl = "listings";
+        this.url = "http://localhost:8080/register";
+        this.loginurl = "http://localhost:8080/register/login";
+        this.accountUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/register/account";
+        this.listingUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/listings";
     }
     register(user) {
         return this.http.post(this.url, user);
@@ -1072,10 +1072,10 @@ __webpack_require__.r(__webpack_exports__);
 let EventService = class EventService {
     constructor(http) {
         this.http = http;
-        this._url = "register";
-        this.getAccountUrl = "register/account";
-        this.loginurl = "register/login";
-        this.entryUrl = "register/entries";
+        this._url = "http://localhost:8080/register";
+        this.getAccountUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/register/account";
+        this.loginurl = "http://localhost:8080/register/login";
+        this.entryUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/register/entries";
     }
     getEvents() {
         return this.http.get(this._url);

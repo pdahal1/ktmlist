@@ -6,10 +6,10 @@ import { Observable } from "rxjs";
   providedIn: "root"
 })
 export class EventService {
-  public _url = "register";
-  public getAccountUrl = "register/account";
-  readonly loginurl = "register/login";
-  readonly entryUrl = "register/entries";
+  public _url = "http://localhost:8080/register";
+  public getAccountUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/register/account";
+  readonly loginurl = "http://localhost:8080/register/login";
+  readonly entryUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/register/entries";
 
   constructor(private http: HttpClient) {}
 
