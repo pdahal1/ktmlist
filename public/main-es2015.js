@@ -1000,17 +1000,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let AuthService = class AuthService {
+    // readonly url = "http://localhost:8080/register"; 
+    // readonly loginurl = "http://localhost:8080/register/login"; 
     // readonly accountUrl= "http://localhost:8080/register/account";
     // readonly listingUrl= "http://localhost:8080/register/listings"; 
     constructor(http, router) {
         this.http = http;
         this.router = router;
         this.url = "register";
-        //readonly loginurl = "register/login"; 
+        this.loginurl = "register/login";
         this.accountUrl = "register/account";
         this.listingUrl = "registrations/listings";
-        // readonly url = "http://localhost:8080/register"; 
-        this.loginurl = "http://localhost:8080/register/login";
     }
     register(user) {
         return this.http.post(this.url, user);
@@ -1074,16 +1074,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let EventService = class EventService {
+    // public _url = "http://localhost:8080/register";
+    // public getAccountUrl = "http://localhost:8080/register/account";
+    // readonly loginurl = "http://localhost:8080/register/login";
     // readonly entryUrl = "http://localhost:8080/register/entries";
     constructor(http) {
         this.http = http;
         this._url = "register";
         this.getAccountUrl = "register/account";
-        //readonly loginurl = "register/login";
+        this.loginurl = "register/login";
         this.entryUrl = "register/entries";
-        // public _url = "http://localhost:8080/register";
-        // public getAccountUrl = "http://localhost:8080/register/account";
-        this.loginurl = "http://localhost:8080/register/login";
     }
     getEvents() {
         return this.http.get(this._url);

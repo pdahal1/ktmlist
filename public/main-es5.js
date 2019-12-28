@@ -1948,6 +1948,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var AuthService =
     /*#__PURE__*/
     function () {
+      // readonly url = "http://localhost:8080/register"; 
+      // readonly loginurl = "http://localhost:8080/register/login"; 
       // readonly accountUrl= "http://localhost:8080/register/account";
       // readonly listingUrl= "http://localhost:8080/register/listings"; 
       function AuthService(http, router) {
@@ -1955,12 +1957,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.http = http;
         this.router = router;
-        this.url = "register"; //readonly loginurl = "register/login"; 
-
+        this.url = "register";
+        this.loginurl = "register/login";
         this.accountUrl = "register/account";
-        this.listingUrl = "registrations/listings"; // readonly url = "http://localhost:8080/register"; 
-
-        this.loginurl = "http://localhost:8080/register/login";
+        this.listingUrl = "registrations/listings";
       }
 
       _createClass(AuthService, [{
@@ -2068,18 +2068,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var EventService =
     /*#__PURE__*/
     function () {
+      // public _url = "http://localhost:8080/register";
+      // public getAccountUrl = "http://localhost:8080/register/account";
+      // readonly loginurl = "http://localhost:8080/register/login";
       // readonly entryUrl = "http://localhost:8080/register/entries";
       function EventService(http) {
         _classCallCheck(this, EventService);
 
         this.http = http;
         this._url = "register";
-        this.getAccountUrl = "register/account"; //readonly loginurl = "register/login";
-
-        this.entryUrl = "register/entries"; // public _url = "http://localhost:8080/register";
-        // public getAccountUrl = "http://localhost:8080/register/account";
-
-        this.loginurl = "http://localhost:8080/register/login";
+        this.getAccountUrl = "register/account";
+        this.loginurl = "register/login";
+        this.entryUrl = "register/entries";
       }
 
       _createClass(EventService, [{
