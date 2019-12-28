@@ -7,12 +7,12 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
   readonly url = "register"; 
-  //readonly loginurl = "register/login"; 
+  readonly loginurl = "register/login"; 
   readonly accountUrl= "register/account";
   readonly listingUrl = "registrations/listings"; 
   
   // readonly url = "http://localhost:8080/register"; 
-  readonly loginurl = "http://localhost:8080/register/login"; 
+  //readonly loginurl = "http://localhost:8080/register/login"; 
   // readonly accountUrl= "http://localhost:8080/register/account";
   // readonly listingUrl= "http://localhost:8080/register/listings"; 
 
