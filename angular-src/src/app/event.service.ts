@@ -11,6 +11,11 @@ export class EventService {
   readonly loginurl = "register/login";
   readonly entryUrl = "register/entries";
 
+  // public _url = "http://localhost:8080/register";
+  // public getAccountUrl = "http://localhost:8080/register/account";
+  // readonly loginurl = "http://localhost:8080/register/login";
+  // readonly entryUrl = "http://localhost:8080/register/entries";
+
   constructor(private http: HttpClient) {}
 
   getEvents() {
