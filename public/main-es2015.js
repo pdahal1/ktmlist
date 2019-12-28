@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\nHello user welcome to Kathmandulist. \n<div class=\"container\">\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <a class=\"navbar-brand\" href=\"#\">Home</a>\n    <button\n      class=\"navbar-toggler\"\n      type=\"button\"\n      data-toggle=\"collapse\"\n      data-target=\"#navbarNav\"\n      aria-controls=\"navbarNav\"\n      aria-expanded=\"false\"\n      aria-label=\"Toggle navigation\"\n    >\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n      <ul class=\"navbar-nav\">\n        <li>\n          <div>\n            <li class=\"nav-item active\">\n             \n              <a [routerLink]=\"['/register']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\"\n                >Registers</a\n              >\n            </li>\n          </div>\n        </li>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/login']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Login</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/listings']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Listings</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/special']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\">Listing(special)</a>\n          </ul>\n        </div>\n        <div>\n          <ul>\n            <a [routerLink]=\"['/events']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\"\n              >Listing (regular)</a>\n          </ul>\n        </div>\n        <!-- <div>\n          <ul>\n            <a [routerLink]=\"['/account']\" routerLinkActive=\"active\">Account</a>\n          </ul>\n        </div> -->\n        <div>\n          <ul>\n            <a [routerLink]=\"['/viewaccount']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\">view Account</a>\n          </ul>\n        </div>\n        <div>\n          <ul>\n            <button *ngIf=\"authService.loggedIn()\" (click)= \"authService.logoutUser()\">Logout</button>\n          </ul>\n        </div>\n        <div>\n          <ul>\n            <!-- {{xx.firstName}} -->\n          </ul>\n        </div>\n      </ul>\n    </div>\n  </nav>\n\n  {{loginservice.full}}\n\n  <router-outlet></router-outlet>\n\n  <div class=\"container\">\n    <div class=\"heading\">\n      <h5 class=\"heading \" style=\"color: blue\">\n        Welcome To Kathmandu\n      </h5>\n    </div>\n  </div>\n\n  <div class=\"container\">\n    <div class=\"row\">\n      <!-- <div class=\"col md-6\">\n        <img\n          src=\"http://www.natgeotraveller.in/wp-content/uploads/2017/01/bhaktapur_1024x768.jpg\"\n          alt=\"\"\n        />\n      </div> -->\n      <div class=\"col md-2\"></div>\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n\n<div class=\"container\" >\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <a class=\"navbar-brand\" href=\"#\">Homes</a>\n    <button\n          class=\"navbar-toggler\"\n          type=\"button\"\n          data-toggle=\"collapse\"\n          data-target=\"#navbarNav\"\n          aria-controls=\"navbarNav\"\n          aria-expanded=\"false\"\n          aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n      <ul class=\"navbar-nav\">\n        <li>\n          <div>\n            <li class=\"nav-item active\">\n             \n              <a [routerLink]=\"['/register']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\"\n                >Registers</a\n              >\n            </li>\n          </div>\n        </li>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/login']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Login</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/listings']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Listings</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/special']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\">Listing(special)</a>\n          </ul>\n        </div>\n        <div>\n          <ul>\n            <a [routerLink]=\"['/events']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\"\n              >Listing (regular)</a>\n          </ul>\n        </div>\n        <!-- <div>\n          <ul>\n            <a [routerLink]=\"['/account']\" routerLinkActive=\"active\">Account</a>\n          </ul>\n        </div> -->\n        <div>\n          <ul>\n            <a [routerLink]=\"['/viewaccount']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\">view Account</a>\n          </ul>\n        </div>\n        <div>\n          <ul>\n            <button *ngIf=\"authService.loggedIn()\" (click)= \"authService.logoutUser()\">Logout</button>\n          </ul>\n        </div>\n        <div>\n          <ul>\n            <!-- {{xx.firstName}} -->\n          </ul>\n        </div>\n      </ul>\n    </div>\n  </nav>\n\n  \n\n  <router-outlet></router-outlet>\n\n</div>\n");
 
 /***/ }),
 
@@ -1000,13 +1000,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let AuthService = class AuthService {
+    // readonly accountUrl= "http://localhost:8080/register/account";
+    // readonly listingUrl= "http://localhost:8080/register/listings"; 
     constructor(http, router) {
         this.http = http;
         this.router = router;
-        this.url = "http://localhost:8080/register";
+        this.url = "register";
+        //readonly loginurl = "register/login"; 
+        this.accountUrl = "register/account";
+        this.listingUrl = "registrations/listings";
+        // readonly url = "http://localhost:8080/register"; 
         this.loginurl = "http://localhost:8080/register/login";
-        this.accountUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/register/account";
-        this.listingUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/listings";
     }
     register(user) {
         return this.http.post(this.url, user);
@@ -1070,12 +1074,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let EventService = class EventService {
+    // readonly entryUrl = "http://localhost:8080/register/entries";
     constructor(http) {
         this.http = http;
-        this._url = "http://localhost:8080/register";
-        this.getAccountUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/register/account";
+        this._url = "register";
+        this.getAccountUrl = "register/account";
+        //readonly loginurl = "register/login";
+        this.entryUrl = "register/entries";
+        // public _url = "http://localhost:8080/register";
+        // public getAccountUrl = "http://localhost:8080/register/account";
         this.loginurl = "http://localhost:8080/register/login";
-        this.entryUrl = "http://mongodb+srv://param:param@cluster0-spkms.mongodb.net/registrations?retryWrites=true&w=majority/register/entries";
     }
     getEvents() {
         return this.http.get(this._url);
