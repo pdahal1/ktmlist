@@ -8,14 +8,25 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./listings.component.css']
 })
 export class ListingsComponent implements OnInit {
-
+  specialEvent: [];
   listings = [];
   constructor(private eventService: EventService, private authService: AuthService) {}
 
+  // ngOnInit() {
+  //   this.authService.getListing().subscribe(data => {
+  //     this.listings = data;
+  //   });
+  // }
+
   ngOnInit() {
-    this.authService.getListing().subscribe(data => {
-      this.listings = data;
+    this.eventService.getSpecial().subscribe(data => {
+      this.specialEvent = data;
+      
+      //thist.detail= this.loginservice.detail;
+
+      
     });
+    
   }
 
 }

@@ -1,0 +1,42 @@
+HOME    Listings                        Register                Login                        Account 
+        Rentals                                                                                 -first verify the user (login)
+            House Rentals                                                                     Add Listing: 
+            Car Rentals                                                                                 view your listings:
+            Space Rentals                                                                                           Edit, Delete
+            Bike                                                                                        view Account: 
+            Tractor                                                                                                 Change Password:
+        ForSale                                                                                         
+            House
+            Space
+            Store
+            Car
+            Bike
+            Land
+            Shoes
+            Jewelary
+        Announcements: 
+            Admission Open
+            Tuition Center
+            Foreign language training
+            Funeral
+            Restaurant open
+            
+        Employment: 
+            Foreignemployment: 
+                DUBAI
+                QUATAR
+                SAUDIARABIA
+                SPAIN
+                AFGANISTHAN
+                MALDIVES
+        Looking For: 
+            Teacher
+            Hair Dresser
+            Cleaner
+        
+
+
+        
+
+             
+

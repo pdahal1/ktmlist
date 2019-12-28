@@ -16,16 +16,12 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li>
-          <div>
-            <li class="nav-item active">
-             
-              <a [routerLink]="['/register']" routerLinkActive="active" *ngIf="!authService.loggedIn()"
-                >Registers</a
-              >
-            </li>
-          </div>
-        </li>
+      
+        <div>
+          <ul>
+            <a [routerLink]="['/listings']" routerLinkActive="active" *ngIf="!authService.loggedIn()">Listings</a>
+          </ul>
+        </div>
 
         <div>
           <ul>
@@ -35,9 +31,11 @@
 
         <div>
           <ul>
-            <a [routerLink]="['/listings']" routerLinkActive="active" *ngIf="!authService.loggedIn()">Listings</a>
+            <a [routerLink]="['/register']" routerLinkActive="active" *ngIf="!authService.loggedIn()">Registers</a>
           </ul>
         </div>
+
+        
 
         <div>
           <ul>

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SpecialComponent } from './special.component';
+import { AddListingComponent } from './add-listing.component';
 
-describe('SpecialComponent', () => {
-  let component: SpecialComponent;
-  let fixture: ComponentFixture<SpecialComponent>;
+describe('AddListingComponent', () => {
+  let component: AddListingComponent;
+  let fixture: ComponentFixture<AddListingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SpecialComponent ]
+      declarations: [ AddListingComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SpecialComponent);
+    fixture = TestBed.createComponent(AddListingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
       console.log(this.detail); 
 
       localStorage.setItem("token", res.token);
-      this.router.navigate(["/special"]);
+      this.router.navigate(["/account"]);
       this.fn= this.loginForm.value._id;
 
      

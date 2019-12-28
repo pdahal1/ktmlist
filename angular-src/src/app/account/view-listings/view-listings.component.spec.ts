@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ActiverouteComponent } from './activeroute.component';
+import { ViewListingsComponent } from './view-listings.component';
 
-describe('ActiverouteComponent', () => {
-  let component: ActiverouteComponent;
-  let fixture: ComponentFixture<ActiverouteComponent>;
+describe('ViewListingsComponent', () => {
+  let component: ViewListingsComponent;
+  let fixture: ComponentFixture<ViewListingsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ActiverouteComponent ]
+      declarations: [ ViewListingsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ActiverouteComponent);
+    fixture = TestBed.createComponent(ViewListingsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

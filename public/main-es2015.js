@@ -23,55 +23,55 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/accountview/account/account.component.html":
-/*!**************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/accountview/account/account.component.html ***!
-  \**************************************************************************************************/
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/account/account.component.html":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/account/account.component.html ***!
+  \**************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- \n<div>\n  \n    <button >View Account</button> <br>\n    <button (click)=\"addListing()\">Add Listing</button> <br>\n    <button (click)=\"viewMyListing()\">view My Listing</button>\n\n   \n</div>\n\n<div>\n    <ul *ngFor=\"let transferred of transferred\">\n        <li>\n            {{transferred._id}}\n\n        </li>\n    </ul>\n</div>\n\n{{transferred._id}} check here\n\n<br>\n{{va.sir}} -->");
+/* harmony default export */ __webpack_exports__["default"] = ("<Button [routerLink]=\"['/addlisting']\" routerLinkActive=\"active\">  Add Listings  </Button> <br>\n<Button [routerLink]=\"['/viewlistings']\" routerLinkActive=\"active\">view your listings</Button> <br>\n<Button [routerLink]=\"['/viewaccount']\" routerLinkActive=\"active\">View your account</Button> <br>\n");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/accountview/viewaccount.component.html":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/accountview/viewaccount.component.html ***!
-  \**********************************************************************************************/
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/account/add-listing/add-listing.component.html":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/account/add-listing/add-listing.component.html ***!
+  \******************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>viewaccount works!</p>\n\n<div>\n  <div>\n    <h1>View Account form</h1>\n  </div>\n  <form [formGroup]=\"viewAccountform\">\n    <div class=\"form-group\">\n      <label for=\"email\">Email</label>\n      <input type=\"text\" formControlName=\"_id\" id=\"\" class=\"form-control\" />\n    </div>\n    <div class=\"form-group\">\n      <label for=\"email\">password</label>\n      <input\n        type=\"text\"\n        formControlName=\"password\"\n        id=\"\"\n        class=\"form-control\"\n      />\n    </div>\n    <button class=\"btn btn-success\" (click)=\"onSubmit()\">Submit</button>\n  </form>\n</div>\n\n<html>\n   <title>Element toggle in angular</title>\n   <body>\n      <div [hidden] = !show><div>\n        <!-- {{id}}\n        {{ AccountDetail._id }} <br />\n        {{ AccountDetail.firstName }} <br />\n        {{ AccountDetail.lastName }} <br />\n        {{ AccountDetail.phone }} <br />\n        {{ AccountDetail.password }} <br /> -->\n</div></div>\n      <button (click) = \"shows()\">Toggle</button>\n      \n   </body>\n</html>\n\n<button (click) = \"go()\">Go</button>\n\n\n\n<!-- <div>\n  <table>\n    <thead>\n      <td>First Name</td>\n      <td>Last Name</td>\n      <td>Phone</td>\n      <td>Email</td>\n      \n    </thead>\n    <tbody>\n      <td>{{AccountDetail.firstName}}</td>\n      <td>{{AccountDetail.lastName}}</td>\n      <td>{{AccountDetail.phone}}</td>\n      <td>{{AccountDetail.email}}</td>\n     \n    </tbody>\n  </table>\n</div> -->");
+/* harmony default export */ __webpack_exports__["default"] = ("you can add the listings here. \n");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/activedetail/activedetail.component.html":
-/*!************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/activedetail/activedetail.component.html ***!
-  \************************************************************************************************/
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/account/view-account/view-account.component.html":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/account/view-account/view-account.component.html ***!
+  \********************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>activedetail works!</p>\n\n<h4>you selected department with id = {{activeDetail}}</h4>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("you will be able to review your account here\n");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/activeroute/activeroute.component.html":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/activeroute/activeroute.component.html ***!
-  \**********************************************************************************************/
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/account/view-listings/view-listings.component.html":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/account/view-listings/view-listings.component.html ***!
+  \**********************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>activeroute works!</p>\n\n<ul *ngFor=\"let department of department\">\n    <li (click)=\"onSelect(department)\">\n        {{department.id}} {{department.name}}\n\n\n    </li>\n</ul>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("you can view your listings here. ");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n\n<div class=\"container\" >\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <a class=\"navbar-brand\" href=\"#\">Homes</a>\n    <button\n          class=\"navbar-toggler\"\n          type=\"button\"\n          data-toggle=\"collapse\"\n          data-target=\"#navbarNav\"\n          aria-controls=\"navbarNav\"\n          aria-expanded=\"false\"\n          aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n      <ul class=\"navbar-nav\">\n        <li>\n          <div>\n            <li class=\"nav-item active\">\n             \n              <a [routerLink]=\"['/register']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\"\n                >Registers</a\n              >\n            </li>\n          </div>\n        </li>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/login']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Login</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/listings']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Listings</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/special']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\">Listing(special)</a>\n          </ul>\n        </div>\n        <div>\n          <ul>\n            <a [routerLink]=\"['/events']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\"\n              >Listing (regular)</a>\n          </ul>\n        </div>\n        <!-- <div>\n          <ul>\n            <a [routerLink]=\"['/account']\" routerLinkActive=\"active\">Account</a>\n          </ul>\n        </div> -->\n        <div>\n          <ul>\n            <a [routerLink]=\"['/viewaccount']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\">view Account</a>\n          </ul>\n        </div>\n        <div>\n          <ul>\n            <button *ngIf=\"authService.loggedIn()\" (click)= \"authService.logoutUser()\">Logout</button>\n          </ul>\n        </div>\n        <div>\n          <ul>\n            <!-- {{xx.firstName}} -->\n          </ul>\n        </div>\n      </ul>\n    </div>\n  </nav>\n\n  \n\n  <router-outlet></router-outlet>\n\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n\n<div class=\"container\" >\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <a class=\"navbar-brand\" href=\"#\">Homes</a>\n    <button\n          class=\"navbar-toggler\"\n          type=\"button\"\n          data-toggle=\"collapse\"\n          data-target=\"#navbarNav\"\n          aria-controls=\"navbarNav\"\n          aria-expanded=\"false\"\n          aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n      <ul class=\"navbar-nav\">\n      \n        <div>\n          <ul>\n            <a [routerLink]=\"['/listings']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Listings</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/login']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Login</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/register']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Registers</a>\n          </ul>\n        </div>\n\n        \n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/special']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\">Listing(special)</a>\n          </ul>\n        </div>\n        <div>\n          <ul>\n            <a [routerLink]=\"['/events']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\"\n              >Listing (regular)</a>\n          </ul>\n        </div>\n        <!-- <div>\n          <ul>\n            <a [routerLink]=\"['/account']\" routerLinkActive=\"active\">Account</a>\n          </ul>\n        </div> -->\n        <div>\n          <ul>\n            <a [routerLink]=\"['/viewaccount']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\">view Account</a>\n          </ul>\n        </div>\n        <div>\n          <ul>\n            <button *ngIf=\"authService.loggedIn()\" (click)= \"authService.logoutUser()\">Logout</button>\n          </ul>\n        </div>\n        <div>\n          <ul>\n            <!-- {{xx.firstName}} -->\n          </ul>\n        </div>\n      </ul>\n    </div>\n  </nav>\n\n  \n\n  <router-outlet></router-outlet>\n\n</div>\n");
 
 /***/ }),
 
@@ -101,19 +101,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/listings/add-listings/add-listings.component.html":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/listings/add-listings/add-listings.component.html ***!
-  \*********************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>add-listings works!</p>\n");
-
-/***/ }),
-
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/listings/listings.component.html":
 /*!****************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/listings/listings.component.html ***!
@@ -123,20 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"headline pt-5\">\n  <h4 >Enjoy the current listings</h4>\n</div>\n<div class=\"row mt-5\">\n        <div class=\"col-md-4 mb-3\" *ngFor=\"let listings of listings\">\n          <div class=\"card text-center\">\n            <div class=\"card-body\">\n              <h5 class=\"firstName\" >Listing </h5>\n              <p class=\"card-text\">{{ listings.category }}</p>\n              <p class=\"card-text\">{{ listings.heading }}</p>\n              <p class=\"card-text\">{{ listings.description }}</p>\n            </div>\n          </div>\n        </div>\n      </div>\n      \n\n     ");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/listings/viewmylistings/viewmylistings.component.html":
-/*!*************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/listings/viewmylistings/viewmylistings.component.html ***!
-  \*************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>viewmylistings works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- <div class=\"headline pt-5\">\n  <h4 >Enjoy the current listings</h4>\n</div>\n<div class=\"row mt-5\">\n        <div class=\"col-md-4 mb-3\" *ngFor=\"let listings of listings\">\n          <div class=\"card text-center\">\n            <div class=\"card-body\">\n              <h5 class=\"firstName\" >Listing </h5>\n              <p class=\"card-text\">{{ listings.category }}</p>\n              <p class=\"card-text\">{{ listings.heading }}</p>\n              <p class=\"card-text\">{{ listings.description }}</p>\n            </div>\n          </div>\n        </div>\n      </div>\n      \n\n      -->\n\n      <div class=\"Heading pt-5 \">\n        <h4>Please Enjoy the Current listings</h4>\n      </div>\n      <div class=\"row mt-5\">\n        <div class=\"col-md-2 mb-3\" *ngFor=\"let specialEvent of specialEvent\">\n          <div class=\"card text-center\">\n            <div class=\"card-body\">\n              <h5 class=\"card-title\">Member :</h5>\n              {{ specialEvent.firstName }}\n              <p class=\"card-text\">{{ specialEvent.lastName }}</p>\n            </div>\n          </div>\n        </div>\n      </div>\n      \n      \n      \n      \n      \n      \n      \n        ");
 
 /***/ }),
 
@@ -163,19 +137,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n  </head>\n  <body>\n    <div class=\"container\">\n      <h1>Register Form</h1>\n      <div class=\"row\">\n        <div class=\"col 10\">\n          <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\">\n\n            <!-- <div class=\"form-group\">\n              <label for=\"email\"> Email</label>\n              <input\n                formControlName=\"email\"\n                type=\"text\"\n                class=\"form-control\"\n                              />\n            </div> -->\n\n            <div class=\"form-group\">\n              <label for=\"firstName\">first name</label>\n              <input\n                formControlName=\"firstName\"\n                type=\"text\"\n                class=\"form-control\"\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"lastName\">Last name</label>\n              <input\n                formControlName=\"lastName\"\n                type=\"text\"\n                name=\"lastName\"\n                id=\"lastName\"\n                class=\"form-control\"\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"phone\">Phone </label>\n              <input\n                formControlName=\"phone\"\n                type=\"text\"\n                name=\"phone\"\n                id=\"phone\"\n                class=\"form-control\"\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"email\"> Email</label>\n              <input\n                formControlName=\"_id\"\n                type=\"text\"\n                name=\"email\"\n                id=\"email\"\n                class=\"form-control\"\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"password\">password</label>\n              <input\n                formControlName=\"password\"\n                type=\"password\"\n                name=\"password\"\n                id=\"password\"\n                class=\"form-control\"\n              />\n            </div>\n            <button class=\"btn btn-success\">Submit</button>\n          </form>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n");
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/special/special.component.html":
-/*!**************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/special/special.component.html ***!
-  \**************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"Heading pt-5 \">\n  <h4>Following are the Special events</h4>\n</div>\n<div class=\"row mt-5\">\n  <div class=\"col-md-2 mb-3\" *ngFor=\"let specialEvent of specialEvent\">\n    <div class=\"card text-center\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">Member :</h5>\n        {{ specialEvent.firstName }}\n        <p class=\"card-text\">{{ specialEvent.lastName }}</p>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"Heading pt-5 \">\n  <h4>Following are the Special events</h4>\n</div>\n<div class=\"row mt-5\">\n  <div class=\"col-md-2 mb-3\" *ngFor=\"let proxy of proxy\">\n    <div class=\"card text-center\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">Member :</h5>\n        {{ proxy.firstName }}\n        <p class=\"card-text\">{{ proxy.lastName }}</p>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n<h4>app works</h4>\n");
 
 /***/ }),
 
@@ -408,23 +369,23 @@ function __importDefault(mod) {
 
 /***/ }),
 
-/***/ "./src/app/accountview/account/account.component.css":
-/*!***********************************************************!*\
-  !*** ./src/app/accountview/account/account.component.css ***!
-  \***********************************************************/
+/***/ "./src/app/account/account.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/account/account.component.css ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FjY291bnR2aWV3L2FjY291bnQvYWNjb3VudC5jb21wb25lbnQuY3NzIn0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FjY291bnQvYWNjb3VudC5jb21wb25lbnQuY3NzIn0= */");
 
 /***/ }),
 
-/***/ "./src/app/accountview/account/account.component.ts":
-/*!**********************************************************!*\
-  !*** ./src/app/accountview/account/account.component.ts ***!
-  \**********************************************************/
+/***/ "./src/app/account/account.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/account/account.component.ts ***!
+  \**********************************************/
 /*! exports provided: AccountComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -433,46 +394,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountComponent", function() { return AccountComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../auth.service */ "./src/app/auth.service.ts");
-/* harmony import */ var _viewaccount_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../viewaccount.component */ "./src/app/accountview/viewaccount.component.ts");
-
-
-
 
 
 let AccountComponent = class AccountComponent {
-    constructor(va, router, route, authService) {
-        this.va = va;
-        this.router = router;
-        this.route = route;
-        this.authService = authService;
-        this.id = "5d83103dc5408118ecf4615b";
-        this.transferred = [];
-    }
-    addListing() {
-        this.router.navigate(['/addlistings']);
-    }
-    viewMyListing() {
-        this.router.navigate(['/viewmylistings']);
-    }
+    constructor() { }
     ngOnInit() {
-        this.authService.getAccount(this.va.id).subscribe(data => {
-            this.transferred = data;
-        });
     }
 };
-AccountComponent.ctorParameters = () => [
-    { type: _viewaccount_component__WEBPACK_IMPORTED_MODULE_4__["ViewaccountComponent"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
-    { type: _auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] }
-];
 AccountComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: "app-account",
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./account.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/accountview/account/account.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./account.component.css */ "./src/app/accountview/account/account.component.css")).default]
+        selector: 'app-account',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./account.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/account/account.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./account.component.css */ "./src/app/account/account.component.css")).default]
     })
 ], AccountComponent);
 
@@ -480,223 +413,133 @@ AccountComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/accountview/viewaccount.component.css":
-/*!*******************************************************!*\
-  !*** ./src/app/accountview/viewaccount.component.css ***!
-  \*******************************************************/
+/***/ "./src/app/account/add-listing/add-listing.component.css":
+/*!***************************************************************!*\
+  !*** ./src/app/account/add-listing/add-listing.component.css ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FjY291bnR2aWV3L3ZpZXdhY2NvdW50LmNvbXBvbmVudC5jc3MifQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FjY291bnQvYWRkLWxpc3RpbmcvYWRkLWxpc3RpbmcuY29tcG9uZW50LmNzcyJ9 */");
 
 /***/ }),
 
-/***/ "./src/app/accountview/viewaccount.component.ts":
-/*!******************************************************!*\
-  !*** ./src/app/accountview/viewaccount.component.ts ***!
-  \******************************************************/
-/*! exports provided: ViewaccountComponent */
+/***/ "./src/app/account/add-listing/add-listing.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/account/add-listing/add-listing.component.ts ***!
+  \**************************************************************/
+/*! exports provided: AddListingComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewaccountComponent", function() { return ViewaccountComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddListingComponent", function() { return AddListingComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _event_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../event.service */ "./src/app/event.service.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../auth.service */ "./src/app/auth.service.ts");
 
 
-
-
-
-
-//import { ActiverouteComponent } from '../activeroute/activeroute.component';
-let ViewaccountComponent = class ViewaccountComponent {
-    constructor(eventService, route, fb, router, authService) {
-        this.eventService = eventService;
-        this.route = route;
-        this.fb = fb;
-        this.router = router;
-        this.authService = authService;
-        this.AccountDetail = [];
-        this.cc = [];
-        this.show = false;
-        this.sir = "param";
-        this.viewAccountform = this.fb.group({
-            _id: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
-            password: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required]
-        });
-    }
-    onSubmit() {
-        this.authService.account(this.viewAccountform.value).subscribe(data => {
-            this.AccountDetail = data;
-            console.log(this.AccountDetail);
-            //console.log(this.AccountDetail._id);
-            //this.id= this.AccountDetail._id; 
-            // this.id = this.route.snapshot.paramMap.get('_id');
-            // console.log(this.id + "id here!!"); 
-            console.log(this.id);
-            // this.authService.getAccount(this.AccountDetail._id).subscribe(data =>{
-            //   this.cc = data; });
-            this.router.navigate(["/account"]);
-        });
-    }
-    check() {
-        console.log("thorough checking");
-    }
-    go() {
-        this.router.navigate(["/account"]);
-    }
-    shows() {
-        this.show = !this.show;
-    }
+let AddListingComponent = class AddListingComponent {
+    constructor() { }
     ngOnInit() {
-        // this.viewAccountform = this.fb.group({
-        //   email: ["", Validators.required],
-        //   password: ["", Validators.required]
-        // });
     }
 };
-ViewaccountComponent.ctorParameters = () => [
-    { type: _event_service__WEBPACK_IMPORTED_MODULE_3__["EventService"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
-    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormBuilder"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
-    { type: _auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"] }
-];
-ViewaccountComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+AddListingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: "app-viewaccount",
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./viewaccount.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/accountview/viewaccount.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./viewaccount.component.css */ "./src/app/accountview/viewaccount.component.css")).default]
+        selector: 'app-add-listing',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./add-listing.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/account/add-listing/add-listing.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./add-listing.component.css */ "./src/app/account/add-listing/add-listing.component.css")).default]
     })
-], ViewaccountComponent);
+], AddListingComponent);
 
 
 
 /***/ }),
 
-/***/ "./src/app/activedetail/activedetail.component.css":
-/*!*********************************************************!*\
-  !*** ./src/app/activedetail/activedetail.component.css ***!
-  \*********************************************************/
+/***/ "./src/app/account/view-account/view-account.component.css":
+/*!*****************************************************************!*\
+  !*** ./src/app/account/view-account/view-account.component.css ***!
+  \*****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FjdGl2ZWRldGFpbC9hY3RpdmVkZXRhaWwuY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FjY291bnQvdmlldy1hY2NvdW50L3ZpZXctYWNjb3VudC5jb21wb25lbnQuY3NzIn0= */");
 
 /***/ }),
 
-/***/ "./src/app/activedetail/activedetail.component.ts":
-/*!********************************************************!*\
-  !*** ./src/app/activedetail/activedetail.component.ts ***!
-  \********************************************************/
-/*! exports provided: ActivedetailComponent */
+/***/ "./src/app/account/view-account/view-account.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/account/view-account/view-account.component.ts ***!
+  \****************************************************************/
+/*! exports provided: ViewAccountComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActivedetailComponent", function() { return ActivedetailComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewAccountComponent", function() { return ViewAccountComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
-
-let ActivedetailComponent = class ActivedetailComponent {
-    constructor(route) {
-        this.route = route;
-    }
+let ViewAccountComponent = class ViewAccountComponent {
+    constructor() { }
     ngOnInit() {
-        let id = parseInt(this.route.snapshot.paramMap.get('id'));
-        this.activeDetail = id;
     }
 };
-ActivedetailComponent.ctorParameters = () => [
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }
-];
-ActivedetailComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+ViewAccountComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-activedetail',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./activedetail.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/activedetail/activedetail.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./activedetail.component.css */ "./src/app/activedetail/activedetail.component.css")).default]
+        selector: 'app-view-account',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./view-account.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/account/view-account/view-account.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./view-account.component.css */ "./src/app/account/view-account/view-account.component.css")).default]
     })
-], ActivedetailComponent);
+], ViewAccountComponent);
 
 
 
 /***/ }),
 
-/***/ "./src/app/activeroute/activeroute.component.css":
-/*!*******************************************************!*\
-  !*** ./src/app/activeroute/activeroute.component.css ***!
-  \*******************************************************/
+/***/ "./src/app/account/view-listings/view-listings.component.css":
+/*!*******************************************************************!*\
+  !*** ./src/app/account/view-listings/view-listings.component.css ***!
+  \*******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FjdGl2ZXJvdXRlL2FjdGl2ZXJvdXRlLmNvbXBvbmVudC5jc3MifQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FjY291bnQvdmlldy1saXN0aW5ncy92aWV3LWxpc3RpbmdzLmNvbXBvbmVudC5jc3MifQ== */");
 
 /***/ }),
 
-/***/ "./src/app/activeroute/activeroute.component.ts":
-/*!******************************************************!*\
-  !*** ./src/app/activeroute/activeroute.component.ts ***!
-  \******************************************************/
-/*! exports provided: ActiverouteComponent */
+/***/ "./src/app/account/view-listings/view-listings.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/account/view-listings/view-listings.component.ts ***!
+  \******************************************************************/
+/*! exports provided: ViewListingsComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActiverouteComponent", function() { return ActiverouteComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewListingsComponent", function() { return ViewListingsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _event_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../event.service */ "./src/app/event.service.ts");
 
 
-
-
-let ActiverouteComponent = class ActiverouteComponent {
-    constructor(activatedRoute, eventServices, router) {
-        this.activatedRoute = activatedRoute;
-        this.eventServices = eventServices;
-        this.router = router;
-        this.department = [
-            { "id": 1, "name": "Angular" },
-            { "id": 2, "name": "Node" },
-            { "id": 3, "name": "MongoDB" },
-            { "id": 4, "name": "Ruby" },
-            { "id": 5, "name": "BootStrap" }
-        ];
-    }
-    onSelect(department) {
-        this.router.navigate(['/activedetail', department.id
-        ]);
-    }
+let ViewListingsComponent = class ViewListingsComponent {
+    constructor() { }
     ngOnInit() {
     }
 };
-ActiverouteComponent.ctorParameters = () => [
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
-    { type: _event_service__WEBPACK_IMPORTED_MODULE_3__["EventService"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
-];
-ActiverouteComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+ViewListingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-activeroute',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./activeroute.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/activeroute/activeroute.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./activeroute.component.css */ "./src/app/activeroute/activeroute.component.css")).default]
+        selector: 'app-view-listings',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./view-listings.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/account/view-listings/view-listings.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./view-listings.component.css */ "./src/app/account/view-listings/view-listings.component.css")).default]
     })
-], ActiverouteComponent);
+], ViewListingsComponent);
 
 
 
@@ -718,18 +561,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _events_events_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./events/events.component */ "./src/app/events/events.component.ts");
 /* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
-/* harmony import */ var _special_special_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./special/special.component */ "./src/app/special/special.component.ts");
-/* harmony import */ var _auth_guard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./auth.guard */ "./src/app/auth.guard.ts");
-/* harmony import */ var _accountview_account_account_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./accountview/account/account.component */ "./src/app/accountview/account/account.component.ts");
-/* harmony import */ var _activeroute_activeroute_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./activeroute/activeroute.component */ "./src/app/activeroute/activeroute.component.ts");
-/* harmony import */ var _listings_listings_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./listings/listings.component */ "./src/app/listings/listings.component.ts");
-/* harmony import */ var _activedetail_activedetail_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./activedetail/activedetail.component */ "./src/app/activedetail/activedetail.component.ts");
-/* harmony import */ var _accountview_viewaccount_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./accountview/viewaccount.component */ "./src/app/accountview/viewaccount.component.ts");
-/* harmony import */ var _listings_add_listings_add_listings_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./listings/add-listings/add-listings.component */ "./src/app/listings/add-listings/add-listings.component.ts");
-/* harmony import */ var _listings_viewmylistings_viewmylistings_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./listings/viewmylistings/viewmylistings.component */ "./src/app/listings/viewmylistings/viewmylistings.component.ts");
-
-
-
+/* harmony import */ var _auth_guard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./auth.guard */ "./src/app/auth.guard.ts");
+/* harmony import */ var _listings_listings_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./listings/listings.component */ "./src/app/listings/listings.component.ts");
+/* harmony import */ var _account_account_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./account/account.component */ "./src/app/account/account.component.ts");
+/* harmony import */ var _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./account/add-listing/add-listing.component */ "./src/app/account/add-listing/add-listing.component.ts");
+/* harmony import */ var _account_view_account_view_account_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./account/view-account/view-account.component */ "./src/app/account/view-account/view-account.component.ts");
+/* harmony import */ var _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./account/view-listings/view-listings.component */ "./src/app/account/view-listings/view-listings.component.ts");
 
 
 
@@ -745,16 +582,13 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     //{path: '' ,  redirectTo: '/events', pathMatch: 'full'}, 
     { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"] },
-    { path: 'events', component: _events_events_component__WEBPACK_IMPORTED_MODULE_4__["EventsComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
+    { path: 'events', component: _events_events_component__WEBPACK_IMPORTED_MODULE_4__["EventsComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_6__["AuthGuard"]] },
     { path: 'register', component: _register_register_component__WEBPACK_IMPORTED_MODULE_5__["RegisterComponent"] },
-    { path: 'special', component: _special_special_component__WEBPACK_IMPORTED_MODULE_6__["SpecialComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
-    { path: 'account', component: _accountview_account_account_component__WEBPACK_IMPORTED_MODULE_8__["AccountComponent"] },
-    { path: 'viewaccount', component: _accountview_viewaccount_component__WEBPACK_IMPORTED_MODULE_12__["ViewaccountComponent"] },
-    { path: 'active', component: _activeroute_activeroute_component__WEBPACK_IMPORTED_MODULE_9__["ActiverouteComponent"] },
-    { path: 'activedetail/:id', component: _activedetail_activedetail_component__WEBPACK_IMPORTED_MODULE_11__["ActivedetailComponent"] },
-    { path: 'listings', component: _listings_listings_component__WEBPACK_IMPORTED_MODULE_10__["ListingsComponent"] },
-    { path: 'addlistings', component: _listings_add_listings_add_listings_component__WEBPACK_IMPORTED_MODULE_13__["AddListingsComponent"] },
-    { path: 'viewmylistings', component: _listings_viewmylistings_viewmylistings_component__WEBPACK_IMPORTED_MODULE_14__["ViewmylistingsComponent"] },
+    { path: 'listings', component: _listings_listings_component__WEBPACK_IMPORTED_MODULE_7__["ListingsComponent"] },
+    { path: 'account', component: _account_account_component__WEBPACK_IMPORTED_MODULE_8__["AccountComponent"] },
+    { path: 'addlisting', component: _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_9__["AddListingComponent"] },
+    { path: 'viewaccount', component: _account_view_account_view_account_component__WEBPACK_IMPORTED_MODULE_10__["ViewAccountComponent"] },
+    { path: 'viewlistings', component: _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_11__["ViewListingsComponent"] },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -844,27 +678,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _events_events_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./events/events.component */ "./src/app/events/events.component.ts");
-/* harmony import */ var _special_special_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./special/special.component */ "./src/app/special/special.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./auth.service */ "./src/app/auth.service.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
-/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm2015/input.js");
-/* harmony import */ var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/checkbox */ "./node_modules/@angular/material/esm2015/checkbox.js");
-/* harmony import */ var _angular_material_chips__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/chips */ "./node_modules/@angular/material/esm2015/chips.js");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm2015/button.js");
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
-/* harmony import */ var _event_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./event.service */ "./src/app/event.service.ts");
-/* harmony import */ var _accountview_account_account_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./accountview/account/account.component */ "./src/app/accountview/account/account.component.ts");
-/* harmony import */ var _activeroute_activeroute_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./activeroute/activeroute.component */ "./src/app/activeroute/activeroute.component.ts");
-/* harmony import */ var _token_interceptor_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./token-interceptor.service */ "./src/app/token-interceptor.service.ts");
-/* harmony import */ var _listings_listings_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./listings/listings.component */ "./src/app/listings/listings.component.ts");
-/* harmony import */ var _activedetail_activedetail_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./activedetail/activedetail.component */ "./src/app/activedetail/activedetail.component.ts");
-/* harmony import */ var _accountview_viewaccount_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./accountview/viewaccount.component */ "./src/app/accountview/viewaccount.component.ts");
-/* harmony import */ var _listings_add_listings_add_listings_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./listings/add-listings/add-listings.component */ "./src/app/listings/add-listings/add-listings.component.ts");
-/* harmony import */ var _listings_viewmylistings_viewmylistings_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./listings/viewmylistings/viewmylistings.component */ "./src/app/listings/viewmylistings/viewmylistings.component.ts");
-
-
-
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./auth.service */ "./src/app/auth.service.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm2015/input.js");
+/* harmony import */ var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/checkbox */ "./node_modules/@angular/material/esm2015/checkbox.js");
+/* harmony import */ var _angular_material_chips__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/chips */ "./node_modules/@angular/material/esm2015/chips.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm2015/button.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
+/* harmony import */ var _event_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./event.service */ "./src/app/event.service.ts");
+/* harmony import */ var _token_interceptor_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./token-interceptor.service */ "./src/app/token-interceptor.service.ts");
+/* harmony import */ var _listings_listings_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./listings/listings.component */ "./src/app/listings/listings.component.ts");
+/* harmony import */ var _account_account_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./account/account.component */ "./src/app/account/account.component.ts");
+/* harmony import */ var _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./account/add-listing/add-listing.component */ "./src/app/account/add-listing/add-listing.component.ts");
+/* harmony import */ var _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./account/view-listings/view-listings.component */ "./src/app/account/view-listings/view-listings.component.ts");
+/* harmony import */ var _account_view_account_view_account_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./account/view-account/view-account.component */ "./src/app/account/view-account/view-account.component.ts");
 
 
 
@@ -898,34 +726,36 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _register_register_component__WEBPACK_IMPORTED_MODULE_6__["RegisterComponent"],
             _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"],
             _events_events_component__WEBPACK_IMPORTED_MODULE_8__["EventsComponent"],
-            _special_special_component__WEBPACK_IMPORTED_MODULE_9__["SpecialComponent"],
-            _accountview_account_account_component__WEBPACK_IMPORTED_MODULE_19__["AccountComponent"],
-            _activeroute_activeroute_component__WEBPACK_IMPORTED_MODULE_20__["ActiverouteComponent"],
-            _listings_listings_component__WEBPACK_IMPORTED_MODULE_22__["ListingsComponent"],
-            _activedetail_activedetail_component__WEBPACK_IMPORTED_MODULE_23__["ActivedetailComponent"],
-            _accountview_viewaccount_component__WEBPACK_IMPORTED_MODULE_24__["ViewaccountComponent"],
-            _listings_add_listings_add_listings_component__WEBPACK_IMPORTED_MODULE_25__["AddListingsComponent"],
-            _listings_viewmylistings_viewmylistings_component__WEBPACK_IMPORTED_MODULE_26__["ViewmylistingsComponent"]
+            _listings_listings_component__WEBPACK_IMPORTED_MODULE_19__["ListingsComponent"],
+            _account_account_component__WEBPACK_IMPORTED_MODULE_20__["AccountComponent"],
+            _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_21__["AddListingComponent"],
+            _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_22__["ViewListingsComponent"],
+            _account_view_account_view_account_component__WEBPACK_IMPORTED_MODULE_23__["ViewAccountComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__["BrowserAnimationsModule"],
-            _angular_material_input__WEBPACK_IMPORTED_MODULE_13__["MatInputModule"],
-            _angular_material_button__WEBPACK_IMPORTED_MODULE_16__["MatButtonModule"],
-            _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_14__["MatCheckboxModule"],
-            _angular_material_chips__WEBPACK_IMPORTED_MODULE_15__["MatChipsModule"],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_17__["MatCardModule"],
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["BrowserAnimationsModule"],
+            _angular_material_input__WEBPACK_IMPORTED_MODULE_12__["MatInputModule"],
+            _angular_material_button__WEBPACK_IMPORTED_MODULE_15__["MatButtonModule"],
+            _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_13__["MatCheckboxModule"],
+            _angular_material_chips__WEBPACK_IMPORTED_MODULE_14__["MatChipsModule"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_16__["MatCardModule"]
         ],
-        providers: [_auth_service__WEBPACK_IMPORTED_MODULE_11__["AuthService"], _event_service__WEBPACK_IMPORTED_MODULE_18__["EventService"], _auth_service__WEBPACK_IMPORTED_MODULE_11__["AuthService"], _accountview_account_account_component__WEBPACK_IMPORTED_MODULE_19__["AccountComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"], _accountview_viewaccount_component__WEBPACK_IMPORTED_MODULE_24__["ViewaccountComponent"],
+        providers: [
+            _auth_service__WEBPACK_IMPORTED_MODULE_10__["AuthService"],
+            _event_service__WEBPACK_IMPORTED_MODULE_17__["EventService"],
+            _auth_service__WEBPACK_IMPORTED_MODULE_10__["AuthService"],
+            _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"],
             {
-                provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HTTP_INTERCEPTORS"],
-                useClass: _token_interceptor_service__WEBPACK_IMPORTED_MODULE_21__["TokenInterceptorService"],
+                provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HTTP_INTERCEPTORS"],
+                useClass: _token_interceptor_service__WEBPACK_IMPORTED_MODULE_18__["TokenInterceptorService"],
                 multi: true
-            }],
+            }
+        ],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })
 ], AppModule);
@@ -1169,50 +999,6 @@ EventsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/listings/add-listings/add-listings.component.css":
-/*!******************************************************************!*\
-  !*** ./src/app/listings/add-listings/add-listings.component.css ***!
-  \******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xpc3RpbmdzL2FkZC1saXN0aW5ncy9hZGQtbGlzdGluZ3MuY29tcG9uZW50LmNzcyJ9 */");
-
-/***/ }),
-
-/***/ "./src/app/listings/add-listings/add-listings.component.ts":
-/*!*****************************************************************!*\
-  !*** ./src/app/listings/add-listings/add-listings.component.ts ***!
-  \*****************************************************************/
-/*! exports provided: AddListingsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddListingsComponent", function() { return AddListingsComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let AddListingsComponent = class AddListingsComponent {
-    constructor() { }
-    ngOnInit() {
-    }
-};
-AddListingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-add-listings',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./add-listings.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/listings/add-listings/add-listings.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./add-listings.component.css */ "./src/app/listings/add-listings/add-listings.component.css")).default]
-    })
-], AddListingsComponent);
-
-
-
-/***/ }),
-
 /***/ "./src/app/listings/listings.component.css":
 /*!*************************************************!*\
   !*** ./src/app/listings/listings.component.css ***!
@@ -1250,9 +1036,15 @@ let ListingsComponent = class ListingsComponent {
         this.authService = authService;
         this.listings = [];
     }
+    // ngOnInit() {
+    //   this.authService.getListing().subscribe(data => {
+    //     this.listings = data;
+    //   });
+    // }
     ngOnInit() {
-        this.authService.getListing().subscribe(data => {
-            this.listings = data;
+        this.eventService.getSpecial().subscribe(data => {
+            this.specialEvent = data;
+            //thist.detail= this.loginservice.detail;
         });
     }
 };
@@ -1267,50 +1059,6 @@ ListingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./listings.component.css */ "./src/app/listings/listings.component.css")).default]
     })
 ], ListingsComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/listings/viewmylistings/viewmylistings.component.css":
-/*!**********************************************************************!*\
-  !*** ./src/app/listings/viewmylistings/viewmylistings.component.css ***!
-  \**********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xpc3RpbmdzL3ZpZXdteWxpc3RpbmdzL3ZpZXdteWxpc3RpbmdzLmNvbXBvbmVudC5jc3MifQ== */");
-
-/***/ }),
-
-/***/ "./src/app/listings/viewmylistings/viewmylistings.component.ts":
-/*!*********************************************************************!*\
-  !*** ./src/app/listings/viewmylistings/viewmylistings.component.ts ***!
-  \*********************************************************************/
-/*! exports provided: ViewmylistingsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewmylistingsComponent", function() { return ViewmylistingsComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-
-
-let ViewmylistingsComponent = class ViewmylistingsComponent {
-    constructor() { }
-    ngOnInit() {
-    }
-};
-ViewmylistingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-viewmylistings',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./viewmylistings.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/listings/viewmylistings/viewmylistings.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./viewmylistings.component.css */ "./src/app/listings/viewmylistings/viewmylistings.component.css")).default]
-    })
-], ViewmylistingsComponent);
 
 
 
@@ -1367,7 +1115,7 @@ let LoginComponent = class LoginComponent {
             this.detail = res;
             console.log(this.detail);
             localStorage.setItem("token", res.token);
-            this.router.navigate(["/special"]);
+            this.router.navigate(["/account"]);
             this.fn = this.loginForm.value._id;
         });
     }
@@ -1470,70 +1218,6 @@ RegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./register.component.css */ "./src/app/register/register.component.css")).default]
     })
 ], RegisterComponent);
-
-
-
-/***/ }),
-
-/***/ "./src/app/special/special.component.css":
-/*!***********************************************!*\
-  !*** ./src/app/special/special.component.css ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".card-title, .Heading{\r\ncolor: red\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3BlY2lhbC9zcGVjaWFsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBIiwiZmlsZSI6InNyYy9hcHAvc3BlY2lhbC9zcGVjaWFsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2FyZC10aXRsZSwgLkhlYWRpbmd7XHJcbmNvbG9yOiByZWRcclxufVxyXG4iXX0= */");
-
-/***/ }),
-
-/***/ "./src/app/special/special.component.ts":
-/*!**********************************************!*\
-  !*** ./src/app/special/special.component.ts ***!
-  \**********************************************/
-/*! exports provided: SpecialComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SpecialComponent", function() { return SpecialComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _event_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../event.service */ "./src/app/event.service.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../auth.service */ "./src/app/auth.service.ts");
-
-
-
-
-
-let SpecialComponent = class SpecialComponent {
-    constructor(eventService, authService, loginservice) {
-        this.eventService = eventService;
-        this.authService = authService;
-        this.loginservice = loginservice;
-    }
-    ngOnInit() {
-        this.eventService.getSpecial().subscribe(data => {
-            this.specialEvent = data;
-            this.proxy = this.specialEvent;
-            //thist.detail= this.loginservice.detail;
-        });
-    }
-};
-SpecialComponent.ctorParameters = () => [
-    { type: _event_service__WEBPACK_IMPORTED_MODULE_2__["EventService"] },
-    { type: _auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"] },
-    { type: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"] }
-];
-SpecialComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: "app-special",
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./special.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/special/special.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./special.component.css */ "./src/app/special/special.component.css")).default]
-    })
-], SpecialComponent);
 
 
 
