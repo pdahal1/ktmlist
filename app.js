@@ -5,6 +5,7 @@ const passport = require('passport-local');
 const { mongoose } = require('./config/database');
 const path = require ("path"); 
 var registrationController = require('./routes/registrationController.js');
+var listingsController = require('./routes/listingController');
 const port = process.env.PORT || 8080; 
 
 const app = express(); 
@@ -12,7 +13,8 @@ app.use(bodyParser.json());
 app.use(cors({ origin: '*' }));
 app.use( express.static(path.join(__dirname, 'public')));
  
-app.use('/register', registrationController ); 
+app.use('/register', registrationController); 
+app.use('/listing', listingsController); 
 
 app.get('/', (req, res) => {
     res.send('invaild endpoint');

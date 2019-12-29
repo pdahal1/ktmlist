@@ -17,6 +17,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { EventService } from './event.service';
+import {MatSelectModule} from '@angular/material/select';
 
 import { TokenInterceptorService } from './token-interceptor.service';
 import { ListingsComponent } from './listings/listings.component';
@@ -48,7 +49,8 @@ import { ViewAccountComponent } from './account/view-account/view-account.compon
 		MatButtonModule,
 		MatCheckboxModule,
 		MatChipsModule,
-		MatCardModule
+		MatCardModule, 
+		MatSelectModule
 	],
 	providers: [
 		AuthService,

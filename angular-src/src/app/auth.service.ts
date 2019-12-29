@@ -14,7 +14,7 @@ export class AuthService {
   // readonly url = "http://localhost:8080/register"; 
   // readonly loginurl = "http://localhost:8080/register/login"; 
   // readonly accountUrl= "http://localhost:8080/register/account";
-  // readonly listingUrl= "http://localhost:8080/register/listings"; 
+  
 
   constructor(private http: HttpClient, private router: Router) { }
  
@@ -52,8 +52,8 @@ export class AuthService {
     this.router.navigate(['/listings'])
   }
 
-  getListing(){
-    return this.http.get<any>(this.listingUrl); 
-  }; 
+  // getListing(){
+  //   return this.http.get<any>(this.listingUrl); 
+  // }; 
 
 }

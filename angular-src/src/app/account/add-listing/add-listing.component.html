@@ -1,1 +1,79 @@
-you can add the listingss here. 
+you can add the listingss here.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add Listings:</h1>
+        <div class="row">
+            <div class="col 10">
+                <form [formGroup]="addListingForm" (ngSubmit)="onSubmit()">
+
+
+                    <!-- <div class="form-group">
+                        <label for="lastName">ID</label>
+                        <input formControlName="_id" type="text" name="_id" id="_id" class="form-control" />
+                    </div> -->
+
+                  
+                    <div class="form-group">
+                        <label for="lastName">Category</label>
+                        <mat-select placeholder = "category" 
+                           formControlName="category"  name = "category" id="category" class="form-control">
+                           <mat-option *ngFor = "let category of category" 
+                              [value] = "category.value">
+                              {{category.display}}
+                           </mat-option>
+                        </mat-select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Heading</label>
+                        <input formControlName="heading" type="text" name="heading" id="heading" class="form-control" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Description</label>
+                        <input formControlName="description" type="text" name="description" id="description" required
+                            class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Cost</label>
+                        <input formControlName="cost" type="text" name="cost" id="cost" class="form-control"  required/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Location</label>
+                        <input formControlName="location" type="text" name="location" id="location"
+                            class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Email</label>
+                        <input formControlName="email" type="text" name="email" id="email" class="form-control" />
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">Phone </label>
+                        <input formControlName="phone" type="text" name="phone" id="phone" class="form-control" />
+                    </div>
+
+
+
+                    <button class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

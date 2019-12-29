@@ -1,0 +1,20 @@
+.card{
+    background-color:lightgray;
+}; 
+
+.card-body.heading{
+    color: green;
+}; 
+.p.heading{
+    color:yellow;
+}; 
+.p.umm{
+    color: green; 
+}; 
+#umm{
+    color: green;
+}
+.check{
+    color:blue; 
+    ;
+}
