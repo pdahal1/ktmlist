@@ -91,7 +91,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "you will be able to review your account here\n";
+    __webpack_exports__["default"] = "<div class=\"container\">\nyou will be able to review your account here\n</div>";
     /***/
   },
 
@@ -111,7 +111,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "you can view your listings here. ";
+    __webpack_exports__["default"] = "<div class=\"container\">\r\nyou can view your listings here. \r\n</div>";
     /***/
   },
 
@@ -131,7 +131,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container\" id=\"example1\">\n  <img src=\"../assets/ktmlist.JPG\" alt=\"\">\n  <h1>KATHMANDU LIST</h1>\n</div>\n\n<div class=\"container\">\n  <nav class=\"navbar navbar-expand-sm navbar-light bg-light\">\n    <!-- <a class=\"navbar-brand\" href=\"#\" [routerLink]=\"['/home']\" routerLinkActive=\"active\">Home</a> -->\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\"\n      aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n      <ul class=\"navbar-nav container\">\n\n        <!-- <div>\n          <ul>\n            <a [routerLink]=\"['/home']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Home</a>\n          </ul>\n        </div> -->\n        <!-- <div>\n          <ul>\n            <a [routerLink]=\"['/listings']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Listings</a>\n          </ul>\n        </div> -->\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/home']\" routerLinkActive=\"active\">Home</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/listings']\" routerLinkActive=\"active\">Listings</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/login']\" routerLinkActive=\"active\">Login</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/register']\" routerLinkActive=\"active\">Register</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/account']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\">Account</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <button *ngIf=\"authService.loggedIn()\" (click)=\"authService.logoutUser()\" style=\"\">Logout</button>\n          </ul>\n        </div>\n\n      </ul>\n\n    </div>\n\n  </nav>\n  <router-outlet></router-outlet>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container\" id=\"example1\">\n  <img src=\"../assets/ktmlist.JPG\" alt=\"\">\n  <h1>KATHMANDU LIST</h1>\n</div>\n\n<!-- <div class=\"container\">\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light text-lg-center\">\n    <a class=\"navbar-brand text-primary\" href=\"#\" [routerLink]=\"['/home']\" routerLinkActive=\"router-link-active\" >Home</a>\n    <a class=\"navbar-brand text-primary   \" href=\"#\" [routerLink]=\"['/culture']\" routerLinkActive=\"router-link-active\">Culture</a>\n    <a class=\"navbar-brand text-primary  \" href=\"#\" [routerLink]=\"['/food']\" routerLinkActive=\"router-link-active\">Food</a>\n    <a class=\"navbar-brand text-primary  \" href=\"#\" [routerLink]=\"['/listings']\" routerLinkActive=\"router-link-active\">Listings</a>\n    <a class=\"navbar-brand text-primary  \" href=\"#\" [routerLink]=\"['/rentals']\" routerLinkActive=\"router-link-active\">Rentals</a>\n    <a class=\"navbar-brand\" href=\"#\" [routerLink]=\"['/braclets']\" routerLinkActive=\"router-link-active\">Braclet</a>\n    <a class=\"navbar-brand\" href=\"#\" [routerLink]=\"['/ear-rings']\" routerLinkActive=\"router-link-active\">Ear-Rings</a>\n    <a class=\"navbar-brand\" href=\"#\" [routerLink]=\"['/rings']\" routerLinkActive=\"router-link-active\">Rings</a>\n    <a class=\"navbar-brand\" href=\"#\" [routerLink]=\"['/haars']\" routerLinkActive=\"router-link-active\">Haar</a>\n    <a class=\"navbar-brand\" href=\"#\" [routerLink]=\"['/extras']\" routerLinkActive=\"router-link-active\">Extras</a>\n    \n  </nav>\n</div> -->\n\n<div class=\"container\">\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light text-lg-center\">\n    <a class=\"navbar-brand text-primary\" href=\"#\" [routerLink]=\"['/home']\" routerLinkActive=\"router-link-active\" >Home</a>\n    <a class=\"navbar-brand text-primary   \" href=\"#\" [routerLink]=\"['/listings']\" routerLinkActive=\"router-link-active\">Listings</a>\n    <a class=\"navbar-brand text-primary  \" href=\"#\" [routerLink]=\"['/login']\" routerLinkActive=\"router-link-active\">Login</a>\n    <a class=\"navbar-brand text-primary  \" href=\"#\" [routerLink]=\"['/register']\" routerLinkActive=\"router-link-active\">Register</a>\n    <a class=\"navbar-brand text-primary  \" href=\"#\" [routerLink]=\"['/account']\" routerLinkActive=\"router-link-active\"  *ngIf=\"authService.loggedIn()\">Account</a>\n    <button *ngIf=\"authService.loggedIn()\" (click)=\"authService.logoutUser()\" >Logout</button>\n   \n  </nav>\n</div>\n\n<router-outlet></router-outlet>\n\n\n\n\n \n";
     /***/
   },
 
@@ -191,7 +191,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"headline pt-1\">\n  \n</div>\n<div class=\"row mt-5\">\n  <div class=\"col-md-4 mb-3\" *ngFor=\"let listings of listings\">\n    <div class=\"card text-center \">\n      <div class=\"card-body\">\n        <div class=\"check\" > <h4>{{listings.heading}}</h4></div> \n        <p></p>\n        <p class=\"card-text\">{{ listings.description }}</p>\n        <p class=\"card-text\">{{ listings.email }}</p>\n        <p class=\"card-text\">{{ listings.phone }}</p>\n      </div>\n    </div>\n  </div>\n</div>";
+    __webpack_exports__["default"] = "\n<div class=\"container\">\n<div class=\"row mt-5 \">\n  <div class=\"col-md-4 mb-3\" *ngFor=\"let listings of listings\">\n    <div class=\"card text-center \">\n      <div class=\"card-body\">\n        <div class=\"check\">\n          <h4>{{listings.heading}}</h4>\n        </div>\n        <p></p>\n        <p class=\"card-text\">{{ listings.description }}</p>\n        <p class=\"card-text\">{{ listings.email }}</p>\n        <p class=\"card-text\">{{ listings.phone }}</p>\n      </div>\n    </div>\n  </div>\n</div>\n</div>";
     /***/
   },
 
@@ -211,7 +211,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n  </head>\n  <body>\n    <mat-card class=\"md-6\">\n      <div class=\"row\">\n        <div class=\"col md-6\">\n          <mat-card-title>Login Form</mat-card-title>\n          <form (ngSubmit)=\"login()\" [formGroup]=\"loginForm\">\n\n            <div>\n              <label for=\"email\">Email</label>\n              <input type=\"text\" formControlName=\"_id\" class=\"form-control\" />\n            </div>\n\n            <div>\n              <label for=\"email\">Password</label>\n              <input\n                type=\"password\"\n                formControlName=\"password\"\n                class=\"form-control\"\n              />\n            </div>\n\n            <div class=\"pt-2\">\n              <button class=\"btn btn-primary\">Submit</button>\n            </div>\n          </form>\n        </div>\n      </div>\n    </mat-card>\n  </body>\n</html>\n";
+    __webpack_exports__["default"] = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n  </head>\n  <div class=\"container\">\n  <body>\n    <mat-card class=\"md-6\">\n      <div class=\"row\">\n        <div class=\"col md-6\">\n          <mat-card-title>Login Form</mat-card-title>\n          <form (ngSubmit)=\"login()\" [formGroup]=\"loginForm\">\n\n            <div>\n              <label for=\"email\">Email</label>\n              <input type=\"text\" formControlName=\"_id\" class=\"form-control\" />\n            </div>\n\n            <div>\n              <label for=\"email\">Password</label>\n              <input\n                type=\"password\"\n                formControlName=\"password\"\n                class=\"form-control\"\n              />\n            </div>\n\n            <div class=\"pt-2\">\n              <button class=\"btn btn-primary\">Submit</button>\n            </div>\n          </form>\n        </div>\n      </div>\n    </mat-card>\n  </body>\n</div>\n</html>\n";
     /***/
   },
 
@@ -1752,18 +1752,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var AuthService =
     /*#__PURE__*/
     function () {
-      // readonly url = "http://localhost:8080/register"; 
-      // readonly loginurl = "http://localhost:8080/register/login"; 
-      // readonly accountUrl= "http://localhost:8080/register/account";
       function AuthService(http, router) {
         _classCallCheck(this, AuthService);
 
         this.http = http;
-        this.router = router;
-        this.url = "register";
-        this.loginurl = "register/login";
-        this.accountUrl = "register/account";
-        this.listingUrl = "registrations/listings";
+        this.router = router; // readonly url = "register"; 
+        // readonly loginurl = "register/login"; 
+        // readonly accountUrl= "register/account";
+        // readonly listingUrl = "registrations/listings"; 
+
+        this.url = "http://localhost:8080/register";
+        this.loginurl = "http://localhost:8080/register/login";
+        this.accountUrl = "http://localhost:8080/register/account";
       }
 
       _createClass(AuthService, [{
@@ -1866,20 +1866,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var EventService =
     /*#__PURE__*/
     function () {
-      // public _url = "http://localhost:8080/register";
-      // public getAccountUrl = "http://localhost:8080/register/account";
-      // readonly loginurl = "http://localhost:8080/register/login";
-      // readonly entryUrl = "http://localhost:8080/register/entries";
-      // readonly listingUrl= "http://localhost:8080/listing"; 
       function EventService(http) {
         _classCallCheck(this, EventService);
 
-        this.http = http;
-        this._url = "register";
-        this.getAccountUrl = "register/account";
-        this.loginurl = "register/login";
-        this.entryUrl = "register/entries";
-        this.listingUrl = "listing";
+        this.http = http; // public _url = "register";
+        // public getAccountUrl = "register/account";
+        // readonly loginurl = "register/login";
+        // readonly entryUrl = "register/entries";
+        // public listingUrl = "listing";
+
+        this._url = "http://localhost:8080/register";
+        this.getAccountUrl = "http://localhost:8080/register/account";
+        this.loginurl = "http://localhost:8080/register/login";
+        this.entryUrl = "http://localhost:8080/register/entries";
+        this.listingUrl = "http://localhost:8080/listing";
       }
 
       _createClass(EventService, [{

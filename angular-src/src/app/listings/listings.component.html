@@ -1,11 +1,12 @@
-<div class="headline pt-1">
-  
-</div>
-<div class="row mt-5">
+
+<div class="container">
+<div class="row mt-5 ">
   <div class="col-md-4 mb-3" *ngFor="let listings of listings">
     <div class="card text-center ">
       <div class="card-body">
-        <div class="check" > <h4>{{listings.heading}}</h4></div> 
+        <div class="check">
+          <h4>{{listings.heading}}</h4>
+        </div>
         <p></p>
         <p class="card-text">{{ listings.description }}</p>
         <p class="card-text">{{ listings.email }}</p>
@@ -13,4 +14,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>

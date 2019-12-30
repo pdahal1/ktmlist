@@ -3,68 +3,37 @@
   <h1>KATHMANDU LIST</h1>
 </div>
 
-<div class="container">
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <!-- <a class="navbar-brand" href="#" [routerLink]="['/home']" routerLinkActive="active">Home</a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav container">
-
-        <!-- <div>
-          <ul>
-            <a [routerLink]="['/home']" routerLinkActive="active" *ngIf="!authService.loggedIn()">Home</a>
-          </ul>
-        </div> -->
-        <!-- <div>
-          <ul>
-            <a [routerLink]="['/listings']" routerLinkActive="active" *ngIf="!authService.loggedIn()">Listings</a>
-          </ul>
-        </div> -->
-
-        <div>
-          <ul>
-            <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <a [routerLink]="['/listings']" routerLinkActive="active">Listings</a>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <a [routerLink]="['/login']" routerLinkActive="active">Login</a>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <a [routerLink]="['/register']" routerLinkActive="active">Register</a>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <a [routerLink]="['/account']" routerLinkActive="active" *ngIf="authService.loggedIn()">Account</a>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <button *ngIf="authService.loggedIn()" (click)="authService.logoutUser()" style="">Logout</button>
-          </ul>
-        </div>
-
-      </ul>
-
-    </div>
-
+<!-- <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light text-lg-center">
+    <a class="navbar-brand text-primary" href="#" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+    <a class="navbar-brand text-primary   " href="#" [routerLink]="['/culture']" routerLinkActive="router-link-active">Culture</a>
+    <a class="navbar-brand text-primary  " href="#" [routerLink]="['/food']" routerLinkActive="router-link-active">Food</a>
+    <a class="navbar-brand text-primary  " href="#" [routerLink]="['/listings']" routerLinkActive="router-link-active">Listings</a>
+    <a class="navbar-brand text-primary  " href="#" [routerLink]="['/rentals']" routerLinkActive="router-link-active">Rentals</a>
+    <a class="navbar-brand" href="#" [routerLink]="['/braclets']" routerLinkActive="router-link-active">Braclet</a>
+    <a class="navbar-brand" href="#" [routerLink]="['/ear-rings']" routerLinkActive="router-link-active">Ear-Rings</a>
+    <a class="navbar-brand" href="#" [routerLink]="['/rings']" routerLinkActive="router-link-active">Rings</a>
+    <a class="navbar-brand" href="#" [routerLink]="['/haars']" routerLinkActive="router-link-active">Haar</a>
+    <a class="navbar-brand" href="#" [routerLink]="['/extras']" routerLinkActive="router-link-active">Extras</a>
+    
   </nav>
-  <router-outlet></router-outlet>
+</div> -->
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light text-lg-center">
+    <a class="navbar-brand text-primary" href="#" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+    <a class="navbar-brand text-primary   " href="#" [routerLink]="['/listings']" routerLinkActive="router-link-active">Listings</a>
+    <a class="navbar-brand text-primary  " href="#" [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a>
+    <a class="navbar-brand text-primary  " href="#" [routerLink]="['/register']" routerLinkActive="router-link-active">Register</a>
+    <a class="navbar-brand text-primary  " href="#" [routerLink]="['/account']" routerLinkActive="router-link-active"  *ngIf="authService.loggedIn()">Account</a>
+    <button *ngIf="authService.loggedIn()" (click)="authService.logoutUser()" >Logout</button>
+   
+  </nav>
 </div>
+
+<router-outlet></router-outlet>
+
+
+
+
+ 
