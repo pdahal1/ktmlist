@@ -51,7 +51,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<Button [routerLink]=\"['/addlisting']\" routerLinkActive=\"active\">  Add Listings  </Button> <br>\n<Button [routerLink]=\"['/viewlistings']\" routerLinkActive=\"active\">view your listings</Button> <br>\n<Button [routerLink]=\"['/viewaccount']\" routerLinkActive=\"active\">View your account</Button> <br>\n";
+    __webpack_exports__["default"] = "\n\n\n<div class=\"container\">\n    <div class=\"row mt-5\">\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/addlisting']\" routerLinkActive=\"active\"> Add Listings </Button>\n            </div>\n        </div>\n\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/viewlistings']\" routerLinkActive=\"active\">view your listings</Button>\n\n            </div>\n        </div>\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/viewaccount']\" routerLinkActive=\"active\">View your account</Button>\n\n            </div>\n        </div>\n    </div>\n</div>";
     /***/
   },
 
@@ -71,7 +71,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "you can add the listingss here.\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n</head>\n\n<body>\n    <div class=\"container\">\n        <h1>Add Listings:</h1>\n        <div class=\"row\">\n            <div class=\"col 10\">\n                <form [formGroup]=\"addListingForm\" (ngSubmit)=\"onSubmit()\">\n\n\n                    <!-- <div class=\"form-group\">\n                        <label for=\"lastName\">ID</label>\n                        <input formControlName=\"_id\" type=\"text\" name=\"_id\" id=\"_id\" class=\"form-control\" />\n                    </div> -->\n\n                  \n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Category</label>\n                        <mat-select placeholder = \"category\" \n                           formControlName=\"category\"  name = \"category\" id=\"category\" class=\"form-control\">\n                           <mat-option *ngFor = \"let category of category\" \n                              [value] = \"category.value\">\n                              {{category.display}}\n                           </mat-option>\n                        </mat-select>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Heading</label>\n                        <input formControlName=\"heading\" type=\"text\" name=\"heading\" id=\"heading\" class=\"form-control\" required />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Description</label>\n                        <input formControlName=\"description\" type=\"text\" name=\"description\" id=\"description\" required\n                            class=\"form-control\" />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Cost</label>\n                        <input formControlName=\"cost\" type=\"text\" name=\"cost\" id=\"cost\" class=\"form-control\"  required/>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Location</label>\n                        <input formControlName=\"location\" type=\"text\" name=\"location\" id=\"location\"\n                            class=\"form-control\" />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Email</label>\n                        <input formControlName=\"email\" type=\"text\" name=\"email\" id=\"email\" class=\"form-control\" />\n                    </div>\n\n\n                    <div class=\"form-group\">\n                        <label for=\"phone\">Phone </label>\n                        <input formControlName=\"phone\" type=\"text\" name=\"phone\" id=\"phone\" class=\"form-control\" />\n                    </div>\n\n\n\n                    <button class=\"btn btn-success\">Submit</button>\n                </form>\n            </div>\n        </div>\n    </div>\n</body>\n\n</html>";
+    __webpack_exports__["default"] = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n</head>\n\n<body>\n    <div class=\"container\">\n        \n        <div class=\"row\">\n            <div class=\"col 10\">\n                <form [formGroup]=\"addListingForm\" (ngSubmit)=\"onSubmit()\">\n\n\n\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Category</label>\n                        <mat-select placeholder=\"category\" formControlName=\"category\" name=\"category\" id=\"category\"\n                            class=\"form-control\">\n                            <mat-option *ngFor=\"let category of category\" [value]=\"category.value\">\n                                {{category.display}}\n                            </mat-option>\n                        </mat-select>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Heading</label>\n                        <input formControlName=\"heading\" type=\"text\" name=\"heading\" id=\"heading\" class=\"form-control\"\n                            required />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Description</label>\n                        <input formControlName=\"description\" type=\"text\" name=\"description\" id=\"description\" required\n                            class=\"form-control\" />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Cost</label>\n                        <input formControlName=\"cost\" type=\"text\" name=\"cost\" id=\"cost\" class=\"form-control\" required />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Location</label>\n                        <input formControlName=\"location\" type=\"text\" name=\"location\" id=\"location\"\n                            class=\"form-control\" />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Email</label>\n                        <input formControlName=\"email\" type=\"text\" name=\"email\" id=\"email\" class=\"form-control\" />\n                    </div>\n\n\n                    <div class=\"form-group\">\n                        <label for=\"phone\">Phone </label>\n                        <input formControlName=\"phone\" type=\"text\" name=\"phone\" id=\"phone\" class=\"form-control\" />\n                    </div>\n\n\n\n                    <button class=\"btn btn-success\">Submit</button>\n                    <button >Back</button>\n                    \n\n                </form>\n            </div>\n        </div>\n    </div>\n</body>\n\n</html>";
     /***/
   },
 
@@ -131,7 +131,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container\">\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <a class=\"navbar-brand\" href=\"#\">Homes</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\"\n      aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n      <ul class=\"navbar-nav\">\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/listings']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Listings</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/login']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Login</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/register']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Registers</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <button *ngIf=\"authService.loggedIn()\" (click)=\"authService.logoutUser()\">Logout</button>\n          </ul>\n        </div>\n        <div>\n\n        </div>\n      </ul>\n    </div>\n  </nav>\n\n\n\n  <router-outlet></router-outlet>\n\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container\" id=\"example1\">\n  <img src=\"../assets/ktmlist.JPG\" alt=\"\">\n  <h1>KATHMANDU LIST</h1>\n</div>\n\n<div class=\"container\">\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <!-- <a class=\"navbar-brand\" href=\"#\" [routerLink]=\"['/home']\" routerLinkActive=\"active\">Home</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\"\n      aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button> -->\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n      <ul class=\"navbar-nav container\">\n\n        <!-- <div>\n          <ul>\n            <a [routerLink]=\"['/home']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Home</a>\n          </ul>\n        </div> -->\n        <!-- <div>\n          <ul>\n            <a [routerLink]=\"['/listings']\" routerLinkActive=\"active\" *ngIf=\"!authService.loggedIn()\">Listings</a>\n          </ul>\n        </div> -->\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/home']\" routerLinkActive=\"active\">Home</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/listings']\" routerLinkActive=\"active\">Listings</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/login']\" routerLinkActive=\"active\">Login</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/register']\" routerLinkActive=\"active\">Register</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <a [routerLink]=\"['/account']\" routerLinkActive=\"active\" *ngIf=\"authService.loggedIn()\">Account</a>\n          </ul>\n        </div>\n\n        <div>\n          <ul>\n            <button *ngIf=\"authService.loggedIn()\" (click)=\"authService.logoutUser()\" style=\"\">Logout</button>\n          </ul>\n        </div>\n\n      </ul>\n\n    </div>\n\n  </nav>\n  <router-outlet></router-outlet>\n</div>";
     /***/
   },
 
@@ -156,6 +156,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html":
+  /*!********************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html ***!
+    \********************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppHomeHomeComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<!-- <div class=\"container\">\n    <img src=\"../assets/kathmandu.jpg\" alt=\"\"> \n</div> -->\n\n<div class=\"container\">\n    <h1>List Everything Here!!!</h1>\n    \n</div>";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/listings/listings.component.html":
   /*!****************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/listings/listings.component.html ***!
@@ -171,7 +191,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"headline pt-5\">\n  <h4>Enjoy the current listings</h4>\n</div>\n<div class=\"row mt-5\">\n  <div class=\"col-md-4 mb-3\" *ngFor=\"let listings of listings\">\n    <div class=\"card text-center \">\n      <div class=\"card-body\">\n        <div class=\"check\"> {{listings.heading}}</div> \n        <p></p>\n\n        <p class=\"card-text\">{{ listings.description }}</p>\n        <p class=\"card-text\">{{ listings.email }}</p>\n        <p class=\"card-text\">{{ listings.phone }}</p>\n      </div>\n    </div>\n  </div>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"headline pt-1\">\n  \n</div>\n<div class=\"row mt-5\">\n  <div class=\"col-md-4 mb-3\" *ngFor=\"let listings of listings\">\n    <div class=\"card text-center \">\n      <div class=\"card-body\">\n        <div class=\"check\" > <h4>{{listings.heading}}</h4></div> \n        <p></p>\n        <p class=\"card-text\">{{ listings.description }}</p>\n        <p class=\"card-text\">{{ listings.email }}</p>\n        <p class=\"card-text\">{{ listings.phone }}</p>\n      </div>\n    </div>\n  </div>\n</div>";
     /***/
   },
 
@@ -211,7 +231,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n  </head>\n  <body>\n    <div class=\"container\">\n      <h1>Register Form</h1>\n      <div class=\"row\">\n        <div class=\"col 10\">\n          <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\">\n\n          \n\n            <div class=\"form-group\">\n              <label for=\"firstName\">first name</label>\n              <input\n                formControlName=\"firstName\"\n                type=\"text\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"lastName\">Last name</label>\n              <input\n                formControlName=\"lastName\"\n                type=\"text\"\n                name=\"lastName\"\n                id=\"lastName\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"phone\">Phone </label>\n              <input\n                formControlName=\"phone\"\n                type=\"text\"\n                name=\"phone\"\n                id=\"phone\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"email\"> Email</label>\n              <input\n                formControlName=\"_id\"\n                type=\"text\"\n                name=\"email\"\n                id=\"email\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"password\">password</label>\n              <input\n                formControlName=\"password\"\n                type=\"password\"\n                name=\"password\"\n                id=\"password\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n            <button class=\"btn btn-success\">Submit</button>\n          </form>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n";
+    __webpack_exports__["default"] = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n  </head>\n  <body>\n    <div class=\"container\">\n      <h1>Register Form</h1>\n      <div class=\"row\">\n        <div class=\"col 10\">\n          <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\">\n\n          \n\n            <div class=\"form-group\">\n              <label for=\"firstName\">first name</label>\n              <input\n                formControlName=\"firstName\"\n                type=\"text\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"lastName\">Last name</label>\n              <input\n                formControlName=\"lastName\"\n                type=\"text\"\n                name=\"lastName\"\n                id=\"lastName\"\n                class=\"form-control\"\n                required \n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"phone\">Phone </label>\n              <input\n                formControlName=\"phone\"\n                type=\"text\"\n                name=\"phone\"\n                id=\"phone\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"email\"> Email</label>\n              <input\n                formControlName=\"_id\"\n                type=\"text\"\n                name=\"email\"\n                id=\"email\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"password\">password</label>\n              <input\n                formControlName=\"password\"\n                type=\"password\"\n                name=\"password\"\n                id=\"password\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n            <button class=\"btn btn-success\">Submit</button>\n          </form>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n";
     /***/
   },
 
@@ -1253,9 +1273,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ./account/view-listings/view-listings.component */
     "./src/app/account/view-listings/view-listings.component.ts");
+    /* harmony import */
 
-    var routes = [//{path: '' ,  redirectTo: '/events', pathMatch: 'full'}, 
-    {
+
+    var _home_home_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ./home/home.component */
+    "./src/app/home/home.component.ts");
+
+    var routes = [{
       path: 'login',
       component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"]
     }, {
@@ -1280,6 +1305,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       path: 'viewlistings',
       component: _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_11__["ViewListingsComponent"]
+    }, {
+      path: 'home',
+      component: _home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"]
+    }, {
+      path: '*',
+      redirectTo: '/home',
+      pathMatch: 'full'
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -1309,7 +1341,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */";
+    __webpack_exports__["default"] = "h1{\r\n    font-family: 'Michroma', sans-serif;\r\n}\r\n\r\n#example1 {\r\n    /* border: 1px solid black; */\r\n    background: url('backgroundimage2.jpg');\r\n    background-size: 100px 80px;\r\n    background-repeat: no-repeat;\r\n    padding:15px;\r\n  };\r\n\r\n/* <!-- font-family: 'Monoton', cursive;\r\nfont-family: 'Courier Prime', monospace;\r\nfont-family: 'Pacifico', cursive;\r\nfont-family: 'Permanent Marker', cursive;\r\nfont-family: 'Great Vibes', cursive;\r\nfont-family: 'Special Elite', cursive;\r\nfont-family: 'Sacramento', cursive;\r\nfont-family: 'Merienda', cursive;\r\nfont-family: 'Michroma', sans-serif;\r\nfont-family: 'Syncopate', sans-serif; --> */\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxtQ0FBbUM7QUFDdkM7O0FBRUE7SUFDSSw2QkFBNkI7SUFDN0IsdUNBQStDO0lBQy9DLDJCQUEyQjtJQUMzQiw0QkFBNEI7SUFDNUIsWUFBWTtFQUNkLENBQUE7O0FBTUY7Ozs7Ozs7OzsyQ0FTMkMiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImgxe1xyXG4gICAgZm9udC1mYW1pbHk6ICdNaWNocm9tYScsIHNhbnMtc2VyaWY7XHJcbn1cclxuXHJcbiNleGFtcGxlMSB7XHJcbiAgICAvKiBib3JkZXI6IDFweCBzb2xpZCBibGFjazsgKi9cclxuICAgIGJhY2tncm91bmQ6IHVybCguLi9hc3NldHMvYmFja2dyb3VuZGltYWdlMi5qcGcpO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiAxMDBweCA4MHB4O1xyXG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICAgIHBhZGRpbmc6MTVweDtcclxuICB9O1xyXG5cclxuIFxyXG5cclxuXHJcblxyXG4vKiA8IS0tIGZvbnQtZmFtaWx5OiAnTW9ub3RvbicsIGN1cnNpdmU7XHJcbmZvbnQtZmFtaWx5OiAnQ291cmllciBQcmltZScsIG1vbm9zcGFjZTtcclxuZm9udC1mYW1pbHk6ICdQYWNpZmljbycsIGN1cnNpdmU7XHJcbmZvbnQtZmFtaWx5OiAnUGVybWFuZW50IE1hcmtlcicsIGN1cnNpdmU7XHJcbmZvbnQtZmFtaWx5OiAnR3JlYXQgVmliZXMnLCBjdXJzaXZlO1xyXG5mb250LWZhbWlseTogJ1NwZWNpYWwgRWxpdGUnLCBjdXJzaXZlO1xyXG5mb250LWZhbWlseTogJ1NhY3JhbWVudG8nLCBjdXJzaXZlO1xyXG5mb250LWZhbWlseTogJ01lcmllbmRhJywgY3Vyc2l2ZTtcclxuZm9udC1mYW1pbHk6ICdNaWNocm9tYScsIHNhbnMtc2VyaWY7XHJcbmZvbnQtZmFtaWx5OiAnU3luY29wYXRlJywgc2Fucy1zZXJpZjsgLS0+ICovIl19 */";
     /***/
   },
 
@@ -1566,13 +1598,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _account_view_account_view_account_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
     /*! ./account/view-account/view-account.component */
     "./src/app/account/view-account/view-account.component.ts");
+    /* harmony import */
+
+
+    var _home_home_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    /*! ./home/home.component */
+    "./src/app/home/home.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _register_register_component__WEBPACK_IMPORTED_MODULE_6__["RegisterComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"], _events_events_component__WEBPACK_IMPORTED_MODULE_8__["EventsComponent"], _listings_listings_component__WEBPACK_IMPORTED_MODULE_20__["ListingsComponent"], _account_account_component__WEBPACK_IMPORTED_MODULE_21__["AccountComponent"], _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_22__["AddListingComponent"], _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_23__["ViewListingsComponent"], _account_view_account_view_account_component__WEBPACK_IMPORTED_MODULE_24__["ViewAccountComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _register_register_component__WEBPACK_IMPORTED_MODULE_6__["RegisterComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"], _events_events_component__WEBPACK_IMPORTED_MODULE_8__["EventsComponent"], _listings_listings_component__WEBPACK_IMPORTED_MODULE_20__["ListingsComponent"], _account_account_component__WEBPACK_IMPORTED_MODULE_21__["AccountComponent"], _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_22__["AddListingComponent"], _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_23__["ViewListingsComponent"], _account_view_account_view_account_component__WEBPACK_IMPORTED_MODULE_24__["ViewAccountComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_25__["HomeComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["BrowserAnimationsModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_12__["MatInputModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_15__["MatButtonModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_13__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_14__["MatChipsModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_16__["MatCardModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_18__["MatSelectModule"]],
       providers: [_auth_service__WEBPACK_IMPORTED_MODULE_10__["AuthService"], _event_service__WEBPACK_IMPORTED_MODULE_17__["EventService"], _auth_service__WEBPACK_IMPORTED_MODULE_10__["AuthService"], _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"], {
         provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HTTP_INTERCEPTORS"],
@@ -1997,6 +2035,85 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/home/home.component.css":
+  /*!*****************************************!*\
+    !*** ./src/app/home/home.component.css ***!
+    \*****************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppHomeHomeComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/home/home.component.ts":
+  /*!****************************************!*\
+    !*** ./src/app/home/home.component.ts ***!
+    \****************************************/
+
+  /*! exports provided: HomeComponent */
+
+  /***/
+  function srcAppHomeHomeComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "HomeComponent", function () {
+      return HomeComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var HomeComponent =
+    /*#__PURE__*/
+    function () {
+      function HomeComponent() {
+        _classCallCheck(this, HomeComponent);
+      }
+
+      _createClass(HomeComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return HomeComponent;
+    }();
+
+    HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-home',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./home.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./home.component.css */
+      "./src/app/home/home.component.css")).default]
+    })], HomeComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/listings/listings.component.css":
   /*!*************************************************!*\
     !*** ./src/app/listings/listings.component.css ***!
@@ -2012,7 +2129,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".card{\r\n    background-color:lightgray;\r\n}; \r\n\r\n.card-body.heading{\r\n    color: green;\r\n}; \r\n\r\n.p.heading{\r\n    color:yellow;\r\n}; \r\n\r\n.p.umm{\r\n    color: green; \r\n}; \r\n\r\n#umm{\r\n    color: green;\r\n} \r\n\r\n.check{\r\n    color:blue; \r\n    ;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGlzdGluZ3MvbGlzdGluZ3MuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLDBCQUEwQjtBQUM5QixDQUFBOztBQUVBO0lBQ0ksWUFBWTtBQUNoQixDQUFBOztBQUNBO0lBQ0ksWUFBWTtBQUNoQixDQUFBOztBQUNBO0lBQ0ksWUFBWTtBQUNoQixDQUFBOztBQUNBO0lBQ0ksWUFBWTtBQUNoQjs7QUFDQTtJQUNJLFVBQVU7O0FBRWQiLCJmaWxlIjoic3JjL2FwcC9saXN0aW5ncy9saXN0aW5ncy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcmR7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOmxpZ2h0Z3JheTtcclxufTsgXHJcblxyXG4uY2FyZC1ib2R5LmhlYWRpbmd7XHJcbiAgICBjb2xvcjogZ3JlZW47XHJcbn07IFxyXG4ucC5oZWFkaW5ne1xyXG4gICAgY29sb3I6eWVsbG93O1xyXG59OyBcclxuLnAudW1te1xyXG4gICAgY29sb3I6IGdyZWVuOyBcclxufTsgXHJcbiN1bW17XHJcbiAgICBjb2xvcjogZ3JlZW47XHJcbn1cclxuLmNoZWNre1xyXG4gICAgY29sb3I6Ymx1ZTsgXHJcbiAgICA7XHJcbn0iXX0= */";
+    __webpack_exports__["default"] = ".card{\r\n    background-color:lightgray;\r\n}; \r\n\r\n.card-body.heading{\r\n    color: green;\r\n}; \r\n\r\n.p.heading{\r\n    color:yellow;\r\n}; \r\n\r\n.p.umm{\r\n    color: green; \r\n}; \r\n\r\n#umm{\r\n    color: green;\r\n} \r\n\r\n.check{\r\n    color:blue; \r\n    ;\r\n}; \r\n\r\np{\r\n    font-family: 'Michroma', sans-serif;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGlzdGluZ3MvbGlzdGluZ3MuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLDBCQUEwQjtBQUM5QixDQUFBOztBQUVBO0lBQ0ksWUFBWTtBQUNoQixDQUFBOztBQUNBO0lBQ0ksWUFBWTtBQUNoQixDQUFBOztBQUNBO0lBQ0ksWUFBWTtBQUNoQixDQUFBOztBQUNBO0lBQ0ksWUFBWTtBQUNoQjs7QUFDQTtJQUNJLFVBQVU7O0FBRWQsQ0FBQTs7QUFFQTtJQUNJLG1DQUFtQztBQUN2QyIsImZpbGUiOiJzcmMvYXBwL2xpc3RpbmdzL2xpc3RpbmdzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2FyZHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6bGlnaHRncmF5O1xyXG59OyBcclxuXHJcbi5jYXJkLWJvZHkuaGVhZGluZ3tcclxuICAgIGNvbG9yOiBncmVlbjtcclxufTsgXHJcbi5wLmhlYWRpbmd7XHJcbiAgICBjb2xvcjp5ZWxsb3c7XHJcbn07IFxyXG4ucC51bW17XHJcbiAgICBjb2xvcjogZ3JlZW47IFxyXG59OyBcclxuI3VtbXtcclxuICAgIGNvbG9yOiBncmVlbjtcclxufVxyXG4uY2hlY2t7XHJcbiAgICBjb2xvcjpibHVlOyBcclxuICAgIDtcclxufTsgXHJcblxyXG5we1xyXG4gICAgZm9udC1mYW1pbHk6ICdNaWNocm9tYScsIHNhbnMtc2VyaWY7XHJcbn0iXX0= */";
     /***/
   },
 

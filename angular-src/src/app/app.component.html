@@ -1,46 +1,70 @@
+<div class="container" id="example1">
+  <img src="../assets/ktmlist.JPG" alt="">
+  <h1>KATHMANDU LIST</h1>
+</div>
+
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Homes</a>
+    <!-- <a class="navbar-brand" href="#" [routerLink]="['/home']" routerLinkActive="active">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
 
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav container">
 
-        <div>
+        <!-- <div>
+          <ul>
+            <a [routerLink]="['/home']" routerLinkActive="active" *ngIf="!authService.loggedIn()">Home</a>
+          </ul>
+        </div> -->
+        <!-- <div>
           <ul>
             <a [routerLink]="['/listings']" routerLinkActive="active" *ngIf="!authService.loggedIn()">Listings</a>
           </ul>
-        </div>
+        </div> -->
 
         <div>
           <ul>
-            <a [routerLink]="['/login']" routerLinkActive="active" *ngIf="!authService.loggedIn()">Login</a>
+            <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
           </ul>
         </div>
 
         <div>
           <ul>
-            <a [routerLink]="['/register']" routerLinkActive="active" *ngIf="!authService.loggedIn()">Registers</a>
+            <a [routerLink]="['/listings']" routerLinkActive="active">Listings</a>
           </ul>
         </div>
 
         <div>
           <ul>
-            <button *ngIf="authService.loggedIn()" (click)="authService.logoutUser()">Logout</button>
+            <a [routerLink]="['/login']" routerLinkActive="active">Login</a>
           </ul>
         </div>
-        <div>
 
+        <div>
+          <ul>
+            <a [routerLink]="['/register']" routerLinkActive="active">Register</a>
+          </ul>
         </div>
+
+        <div>
+          <ul>
+            <a [routerLink]="['/account']" routerLinkActive="active" *ngIf="authService.loggedIn()">Account</a>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <button *ngIf="authService.loggedIn()" (click)="authService.logoutUser()" style="">Logout</button>
+          </ul>
+        </div>
+
       </ul>
+
     </div>
+
   </nav>
-
-
-
   <router-outlet></router-outlet>
-
 </div>

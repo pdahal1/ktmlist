@@ -1,3 +1,25 @@
-<Button [routerLink]="['/addlisting']" routerLinkActive="active">  Add Listings  </Button> <br>
-<Button [routerLink]="['/viewlistings']" routerLinkActive="active">view your listings</Button> <br>
-<Button [routerLink]="['/viewaccount']" routerLinkActive="active">View your account</Button> <br>
+
+
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card text-center">
+                <Button [routerLink]="['/addlisting']" routerLinkActive="active"> Add Listings </Button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-center">
+                <Button [routerLink]="['/viewlistings']" routerLinkActive="active">view your listings</Button>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center">
+                <Button [routerLink]="['/viewaccount']" routerLinkActive="active">View your account</Button>
+
+            </div>
+        </div>
+    </div>
+</div>

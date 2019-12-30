@@ -1,0 +1,26 @@
+h1{
+    font-family: 'Michroma', sans-serif;
+}
+
+#example1 {
+    /* border: 1px solid black; */
+    background: url(../assets/backgroundimage2.jpg);
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    padding:15px;
+  };
+
+ 
+
+
+
+/* <!-- font-family: 'Monoton', cursive;
+font-family: 'Courier Prime', monospace;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Michroma', sans-serif;
+font-family: 'Syncopate', sans-serif; --> */

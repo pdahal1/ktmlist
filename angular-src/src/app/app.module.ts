@@ -25,6 +25,7 @@ import { AccountComponent } from './account/account.component';
 import { AddListingComponent } from './account/add-listing/add-listing.component';
 import { ViewListingsComponent } from './account/view-listings/view-listings.component';
 import { ViewAccountComponent } from './account/view-account/view-account.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
 	declarations: [
@@ -36,7 +37,8 @@ import { ViewAccountComponent } from './account/view-account/view-account.compon
 		AccountComponent,
 		AddListingComponent,
 		ViewListingsComponent,
-		ViewAccountComponent
+		ViewAccountComponent,
+		HomeComponent
 	],
 	imports: [
 		BrowserModule,

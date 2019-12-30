@@ -10,11 +10,12 @@ import { AccountComponent } from './account/account.component';
 import { AddListingComponent } from './account/add-listing/add-listing.component';
 import { ViewAccountComponent } from './account/view-account/view-account.component';
 import { ViewListingsComponent } from './account/view-listings/view-listings.component';
+import { HomeComponent } from './home/home.component';
 
 
 
 const routes: Routes = [
-  //{path: '' ,  redirectTo: '/events', pathMatch: 'full'}, 
+   
   {path:'login', component: LoginComponent },
   {path: 'events' , component: EventsComponent, canActivate: [AuthGuard] },
   { path: 'register', component: RegisterComponent },
@@ -23,6 +24,8 @@ const routes: Routes = [
   { path: 'addlisting', component: AddListingComponent },
   { path: 'viewaccount', component: ViewAccountComponent },
   { path: 'viewlistings', component: ViewListingsComponent },
+  { path: 'home', component: HomeComponent },
+  { path: '*', redirectTo: '/home', pathMatch: 'full' },
    // {path: 'special' , component: SpecialComponent, canActivate: [AuthGuard]},
   
  
