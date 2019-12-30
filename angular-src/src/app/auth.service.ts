@@ -6,14 +6,14 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AuthService {
-  // readonly url = "register"; 
-  // readonly loginurl = "register/login"; 
-  // readonly accountUrl= "register/account";
-  // readonly listingUrl = "registrations/listings"; 
+  readonly url = "register"; 
+  readonly loginurl = "register/login"; 
+  readonly accountUrl= "register/account";
+  readonly listingUrl = "registrations/listings"; 
   
-  readonly url = "http://localhost:8080/register"; 
-  readonly loginurl = "http://localhost:8080/register/login"; 
-  readonly accountUrl= "http://localhost:8080/register/account";
+  // readonly url = "http://localhost:8080/register"; 
+  // readonly loginurl = "http://localhost:8080/register/login"; 
+  // readonly accountUrl= "http://localhost:8080/register/account";
   
 
   constructor(private http: HttpClient, private router: Router) { }

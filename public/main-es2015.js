@@ -892,16 +892,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let AuthService = class AuthService {
+    // readonly url = "http://localhost:8080/register"; 
+    // readonly loginurl = "http://localhost:8080/register/login"; 
+    // readonly accountUrl= "http://localhost:8080/register/account";
     constructor(http, router) {
         this.http = http;
         this.router = router;
-        // readonly url = "register"; 
-        // readonly loginurl = "register/login"; 
-        // readonly accountUrl= "register/account";
-        // readonly listingUrl = "registrations/listings"; 
-        this.url = "http://localhost:8080/register";
-        this.loginurl = "http://localhost:8080/register/login";
-        this.accountUrl = "http://localhost:8080/register/account";
+        this.url = "register";
+        this.loginurl = "register/login";
+        this.accountUrl = "register/account";
+        this.listingUrl = "registrations/listings";
     }
     register(user) {
         return this.http.post(this.url, user);
@@ -961,18 +961,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let EventService = class EventService {
+    // public _url = "http://localhost:8080/register";
+    // public getAccountUrl = "http://localhost:8080/register/account";
+    // readonly loginurl = "http://localhost:8080/register/login";
+    // readonly entryUrl = "http://localhost:8080/register/entries";
+    // readonly listingUrl= "http://localhost:8080/listing"; 
     constructor(http) {
         this.http = http;
-        // public _url = "register";
-        // public getAccountUrl = "register/account";
-        // readonly loginurl = "register/login";
-        // readonly entryUrl = "register/entries";
-        // public listingUrl = "listing";
-        this._url = "http://localhost:8080/register";
-        this.getAccountUrl = "http://localhost:8080/register/account";
-        this.loginurl = "http://localhost:8080/register/login";
-        this.entryUrl = "http://localhost:8080/register/entries";
-        this.listingUrl = "http://localhost:8080/listing";
+        this._url = "register";
+        this.getAccountUrl = "register/account";
+        this.loginurl = "register/login";
+        this.entryUrl = "register/entries";
+        this.listingUrl = "listing";
     }
     getEvents() {
         return this.http.get(this._url);
