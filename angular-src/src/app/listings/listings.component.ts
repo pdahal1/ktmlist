@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from '../event.service';
 import { AuthService } from '../auth.service';
+import { AddListingComponent } from '../account/add-listing/add-listing.component';
 
 @Component({
   selector: 'app-listings',
@@ -10,24 +11,28 @@ import { AuthService } from '../auth.service';
 export class ListingsComponent implements OnInit {
   specialEvent: [];
   listings = [];
-  constructor(private eventService: EventService, private authService: AuthService) {}
+  listing = [];
+  papa = "chandra";
+  
+  constructor(private eventService: EventService, private authService: AuthService, private addlisting: AddListingComponent) {}
 
   ngOnInit() {
-    this.eventService.getSpecial().subscribe(data => {
-      this.specialEvent = data;
 
-      this.eventService.getListing().subscribe(data => {
-            this.listings = data;
-           });
-           
+    this.eventService.getListings().subscribe(data => {
+      this.listings = data;
+      console.log(this.papa)
     });
+    // this.eventService.getListing(this.papa).subscribe(data => {
+    //   this.listing = data;
+    // });
+    this.eventService.getRegister(this.papa).subscribe(data => {
+      this.listing = data;
+    });
+
     
+         
   }
 
 }
 
-// ngOnInit() {
-  //   this.authService.getListing().subscribe(data => {
-  //     this.listings = data;
-  //   });
-  // }
+

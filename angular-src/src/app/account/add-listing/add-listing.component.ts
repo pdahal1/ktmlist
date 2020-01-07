@@ -11,19 +11,9 @@ import { EventService } from 'src/app/event.service';
 export class AddListingComponent implements OnInit {
 
   public addListingForm: FormGroup; 
-  //category: any = ['Food', 'clothing', 'Entertainment', 'Service', 'Fixing']; 
+  category: any = ['Food', 'Clothing', 'Entertainment', 'Service', 'Fixing', 'Rentals']; 
 
-  category: any = [
-    {value:'Food', display:'Food'},
-    {value:'Entertainment', display:'Entertainment'},
-    {value:'Service', display:'Service'},
-    {value:'Clothing', display:'Clothing'},
-    {value:'Fixing', display:'Fixing'},
-    {value:'Rentals', display:'Rentals'},
-  ]; 
-
-
-  constructor(private router: Router, private fb: FormBuilder, private eventService: EventService) { 
+    constructor(private router: Router, private fb: FormBuilder, private eventService: EventService) { 
     this.addListingForm = this.fb.group({
       _id: ["", Validators.required],
       category: ["", Validators.required],
@@ -40,7 +30,11 @@ export class AddListingComponent implements OnInit {
       console.log(res); 
       this.router.navigate(["/listings"])
     })
-  }
+  }; 
+
+  back() {
+    this.router.navigate(["/account"])
+  }; 
 
   ngOnInit() {
   }

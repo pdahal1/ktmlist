@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n\n\n<div class=\"container\">\n    <div class=\"row mt-5\">\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/addlisting']\" routerLinkActive=\"active\"> Add Listings </Button>\n            </div>\n        </div>\n\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/viewlistings']\" routerLinkActive=\"active\">view your listings</Button>\n\n            </div>\n        </div>\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/viewaccount']\" routerLinkActive=\"active\">View your account</Button>\n\n            </div>\n        </div>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("\n\n\n<div class=\"container\" style=\"background-image: url(../assets/1.JPG);\">\n    <div class=\"row mt-5\">\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/addlisting']\" routerLinkActive=\"active\"> Add Listings </Button>\n            </div>\n        </div>\n\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/viewlistings']\" routerLinkActive=\"active\">view your listings</Button>\n\n            </div>\n        </div>\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/viewaccount']\" routerLinkActive=\"active\">View your account</Button>\n\n            </div>\n        </div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n</head>\n\n<body>\n    <div class=\"container\">\n        \n        <div class=\"row\">\n            <div class=\"col 10\">\n                <form [formGroup]=\"addListingForm\" (ngSubmit)=\"onSubmit()\">\n\n\n\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Category</label>\n                        <mat-select placeholder=\"category\" formControlName=\"category\" name=\"category\" id=\"category\"\n                            class=\"form-control\">\n                            <mat-option *ngFor=\"let category of category\" [value]=\"category.value\">\n                                {{category.display}}\n                            </mat-option>\n                        </mat-select>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Heading</label>\n                        <input formControlName=\"heading\" type=\"text\" name=\"heading\" id=\"heading\" class=\"form-control\"\n                            required />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Description</label>\n                        <input formControlName=\"description\" type=\"text\" name=\"description\" id=\"description\" required\n                            class=\"form-control\" />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Cost</label>\n                        <input formControlName=\"cost\" type=\"text\" name=\"cost\" id=\"cost\" class=\"form-control\" required />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Location</label>\n                        <input formControlName=\"location\" type=\"text\" name=\"location\" id=\"location\"\n                            class=\"form-control\" />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Email</label>\n                        <input formControlName=\"email\" type=\"text\" name=\"email\" id=\"email\" class=\"form-control\" />\n                    </div>\n\n\n                    <div class=\"form-group\">\n                        <label for=\"phone\">Phone </label>\n                        <input formControlName=\"phone\" type=\"text\" name=\"phone\" id=\"phone\" class=\"form-control\" />\n                    </div>\n\n\n\n                    <button class=\"btn btn-success\">Submit</button>\n                    <button >Back</button>\n                    \n\n                </form>\n            </div>\n        </div>\n    </div>\n</body>\n\n</html>");
+/* harmony default export */ __webpack_exports__["default"] = ("\n    <div class=\"container\" style=\"background-image: url(../assets/1.JPG);\">\n\n        <div class=\"row\">\n            <div class=\"col 10\">\n                <form [formGroup]=\"addListingForm\" (ngSubmit)=\"onSubmit()\">\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Category</label>\n                        <mat-select placeholder=\"category\" formControlName=\"category\" name=\"category\" id=\"category\"\n                            class=\"form-control\">\n                            <mat-option *ngFor=\"let category of category\" [value]=\"category\">\n                                {{category}}\n                            </mat-option>\n                        </mat-select>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Heading</label>\n                        <input formControlName=\"heading\" type=\"text\" name=\"heading\" id=\"heading\" class=\"form-control\"\n                            required />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Description</label>\n                        <input formControlName=\"description\" type=\"text\" name=\"description\" id=\"description\" required\n                            class=\"form-control\" />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Cost</label>\n                        <input formControlName=\"cost\" type=\"text\" name=\"cost\" id=\"cost\" class=\"form-control\" required />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Location</label>\n                        <input formControlName=\"location\" type=\"text\" name=\"location\" id=\"location\"\n                            class=\"form-control\" />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Email</label>\n                        <input formControlName=\"email\" type=\"text\" name=\"email\" id=\"email\" class=\"form-control\" />\n                    </div>\n\n\n                    <div class=\"form-group\">\n                        <label for=\"phone\">Phone </label>\n                        <input formControlName=\"phone\" type=\"text\" name=\"phone\" id=\"phone\" class=\"form-control\" />\n                    </div>\n\n                    <button class=\"btn btn-success\">Submit</button>\n                    \n                </form>\n                <button (click)=\"back()\">Back</button>\n            </div>\n        </div>\n    </div>\n");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\nyou will be able to review your account here\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\nyou will be able to review your account here\n<button (click)=\"back()\">Back</button>\n</div>\n\n");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\r\nyou can view your listings here. \r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\r\n    you can view your listings here.  \r\n<button (click)=\"back()\">Back</button>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -110,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- <div class=\"container\">\n    <img src=\"../assets/kathmandu.jpg\" alt=\"\"> \n</div> -->\n\n<div class=\"container\">\n    <h1>List Everything Here!!!</h1>\n    \n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"background-image: url(../assets/1.JPG);\">\n    <div class=\"row\">\n        <div class=\"col-4\">\n            <!-- Hello -->\n        </div>\n        <div class=\"col-4\">\n            <div id=\"carouselExampleSlidesOnly\" class=\"carousel slide\" data-ride=\"carousel\">\n                <div class=\"carousel-inner\">\n                    <div class=\"carousel-item active\">\n                        <div class=\"container\">\n                            <div class=\"row mt-5 \">\n\n                                <div class=\"card text-center \">\n                                    <div class=\"card-body\">\n                                        <div class=\"check\">\n                                            <h4>{{listing.heading}}</h4>\n                                        </div>\n                                        <p></p>\n                                        <p class=\"card-text\">{{ listing.category }}</p>\n                                        <p class=\"card-text\">{{ listing.description }}</p>\n                                        <p class=\"card-text\">{{ listing.email }}</p>\n                                        <p class=\"card-text\">{{ listing.phone }}</p>\n                                    </div>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"carousel-item\">\n                        <div class=\"container\">\n                            <div class=\"row mt-5 \">\n\n                                <div class=\"card text-center \">\n                                    <div class=\"card-body\">\n                                        <div class=\"check\">\n                                            <h4>{{listing1.heading}}</h4>\n                                        </div>\n                                        <p></p>\n                                        <p class=\"card-text\">{{ listing1.category }}</p>\n                                        <p class=\"card-text\">{{ listing1.description }}</p>\n                                        <p class=\"card-text\">{{ listing1.email }}</p>\n                                        <p class=\"card-text\">{{ listing1.phone }}</p>\n                                    </div>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"carousel-item\">\n                        <div class=\"container\">\n                            <div class=\"row mt-5 \">\n\n                                <div class=\"card text-center \">\n                                    <div class=\"card-body\">\n                                        <div class=\"check\">\n                                            <h4>{{listing2.heading}}</h4>\n                                        </div>\n                                        <p></p>\n                                        <p class=\"card-text\">{{ listing2.category }}</p>\n                                        <p class=\"card-text\">{{ listing2.description }}</p>\n                                        <p class=\"card-text\">{{ listing2.email }}</p>\n                                        <p class=\"card-text\">{{ listing2.phone }}</p>\n                                    </div>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-4\">\n            <!-- Hello -->\n        </div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"container\">\n<div class=\"row mt-5 \">\n  <div class=\"col-md-4 mb-3\" *ngFor=\"let listings of listings\">\n    <div class=\"card text-center \">\n      <div class=\"card-body\">\n        <div class=\"check\">\n          <h4>{{listings.heading}}</h4>\n        </div>\n        <p></p>\n        <p class=\"card-text\">{{ listings.description }}</p>\n        <p class=\"card-text\">{{ listings.email }}</p>\n        <p class=\"card-text\">{{ listings.phone }}</p>\n      </div>\n    </div>\n  </div>\n</div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("\n\n\n<div class=\"container\"  >\n  <div style=\"background-image: url(../assets/1.JPG);\">\n  <div class=\"row mt-5 \">\n    <div class=\"col-md-4 mb-3\" *ngFor=\"let category of this.addlisting.category\">\n      <div class=\"card text-center \">\n        <div class=\"card-body\">\n          {{category}}\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"row mt-5 \">\n    <div class=\"col-md-4 mb-3\" *ngFor=\"let listings of listings\">\n      <div class=\"card text-center \">\n        <div class=\"card-body\">\n          <div class=\"check\">\n            <h4>{{listings.heading}}</h4>\n          </div>\n          <p></p>\n          <p class=\"card-text\">{{ listings.category }}</p>\n          <p class=\"card-text\">{{ listings.description }}</p>\n          <p class=\"card-text\">{{ listings.email }}</p>\n          <p class=\"card-text\">{{ listings.phone }}</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n</div>\n\n");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n  </head>\n  <div class=\"container\">\n  <body>\n    <mat-card class=\"md-6\">\n      <div class=\"row\">\n        <div class=\"col md-6\">\n          <mat-card-title>Login Form</mat-card-title>\n          <form (ngSubmit)=\"login()\" [formGroup]=\"loginForm\">\n\n            <div>\n              <label for=\"email\">Email</label>\n              <input type=\"text\" formControlName=\"_id\" class=\"form-control\" />\n            </div>\n\n            <div>\n              <label for=\"email\">Password</label>\n              <input\n                type=\"password\"\n                formControlName=\"password\"\n                class=\"form-control\"\n              />\n            </div>\n\n            <div class=\"pt-2\">\n              <button class=\"btn btn-primary\">Submit</button>\n            </div>\n          </form>\n        </div>\n      </div>\n    </mat-card>\n  </body>\n</div>\n</html>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n  </head>\n  <div class=\"container\" style=\"background-image: url(../assets/1.JPG);\">\n  <body>\n    <mat-card class=\"md-6\">\n      <div class=\"row\">\n        <div class=\"col md-6\">\n          <mat-card-title>Login Form</mat-card-title>\n          <form (ngSubmit)=\"login()\" [formGroup]=\"loginForm\">\n\n            <div>\n              <label for=\"email\">Email</label>\n              <input type=\"text\" formControlName=\"_id\" class=\"form-control\" />\n            </div>\n\n            <div>\n              <label for=\"email\">Password</label>\n              <input\n                type=\"password\"\n                formControlName=\"password\"\n                class=\"form-control\"\n              />\n            </div>\n\n            <div class=\"pt-2\">\n              <button class=\"btn btn-primary\">Submit</button>\n            </div>\n          </form>\n        </div>\n      </div>\n    </mat-card>\n  </body>\n</div>\n</html>\n");
 
 /***/ }),
 
@@ -149,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n  </head>\n  <body>\n    <div class=\"container\">\n      <h1>Register Form</h1>\n      <div class=\"row\">\n        <div class=\"col 10\">\n          <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\">\n\n          \n\n            <div class=\"form-group\">\n              <label for=\"firstName\">first name</label>\n              <input\n                formControlName=\"firstName\"\n                type=\"text\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"lastName\">Last name</label>\n              <input\n                formControlName=\"lastName\"\n                type=\"text\"\n                name=\"lastName\"\n                id=\"lastName\"\n                class=\"form-control\"\n                required \n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"phone\">Phone </label>\n              <input\n                formControlName=\"phone\"\n                type=\"text\"\n                name=\"phone\"\n                id=\"phone\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"email\"> Email</label>\n              <input\n                formControlName=\"_id\"\n                type=\"text\"\n                name=\"email\"\n                id=\"email\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"password\">password</label>\n              <input\n                formControlName=\"password\"\n                type=\"password\"\n                name=\"password\"\n                id=\"password\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n            <button class=\"btn btn-success\">Submit</button>\n          </form>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n  <title>Document</title>\n</head>\n\n<body>\n  <div class=\"container\" style=\"background-image: url(../assets/1.JPG);\">\n    <h1>Register Form</h1>\n    <div class=\"row\">\n      <div class=\"col 10\">\n        <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\">\n\n\n\n          <div class=\"form-group\">\n            <label for=\"firstName\">first name</label>\n            <input formControlName=\"firstName\" type=\"text\" class=\"form-control\" required />\n          </div>\n\n          <div class=\"form-group\">\n            <label for=\"lastName\">Last name</label>\n            <input formControlName=\"lastName\" type=\"text\" name=\"lastName\" id=\"lastName\" class=\"form-control\" required />\n          </div>\n\n          <!-- <div class=\"form-group\">\n              <label for=\"phone\">Phone </label>\n              <input\n                formControlName=\"phone\"\n                type=\"text\"\n                name=\"phone\"\n                id=\"phone\"\n                class=\"form-control\"\n                required\n              />\n            </div> -->\n\n          <div class=\"form-group\">\n            <label for=\"email\"> Phone</label>\n            <input formControlName=\"phone\" type=\"text\" name=\"phone\" id=\"phone\" class=\"form-control\" required\n              minlength=\"7\" />\n\n          </div>\n\n          <!-- <input id=\"name\" name=\"name\" class=\"form-control\"\n      required minlength=\"4\" appForbiddenName=\"bob\"\n      [(ngModel)]=\"hero.name\" #name=\"ngModel\" > -->\n\n\n\n\n          <div class=\"form-group\">\n            <label for=\"email\"> Email</label>\n            <input formControlName=\"_id\" type=\"text\" name=\"email\" id=\"email\" class=\"form-control\" required\n              minlength=\"7\" />\n          </div>\n\n          <div class=\"form-group\">\n            <label for=\"password\">password</label>\n            <input formControlName=\"password\" type=\"password\" name=\"password\" id=\"password\" class=\"form-control\"\n              required minlength=\"4\" />\n\n          </div>\n          <button class=\"btn btn-success\">Submit</button>\n        </form>\n      </div>\n    </div>\n  </div>\n</body>\n\n</html>");
 
 /***/ }),
 
@@ -464,15 +464,7 @@ let AddListingComponent = class AddListingComponent {
         this.router = router;
         this.fb = fb;
         this.eventService = eventService;
-        //category: any = ['Food', 'clothing', 'Entertainment', 'Service', 'Fixing']; 
-        this.category = [
-            { value: 'Food', display: 'Food' },
-            { value: 'Entertainment', display: 'Entertainment' },
-            { value: 'Service', display: 'Service' },
-            { value: 'Clothing', display: 'Clothing' },
-            { value: 'Fixing', display: 'Fixing' },
-            { value: 'Rentals', display: 'Rentals' },
-        ];
+        this.category = ['Food', 'Clothing', 'Entertainment', 'Service', 'Fixing', 'Rentals'];
         this.addListingForm = this.fb.group({
             _id: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
             category: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
@@ -490,6 +482,11 @@ let AddListingComponent = class AddListingComponent {
             this.router.navigate(["/listings"]);
         });
     }
+    ;
+    back() {
+        this.router.navigate(["/account"]);
+    }
+    ;
     ngOnInit() {
     }
 };
@@ -535,13 +532,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewAccountComponent", function() { return ViewAccountComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 let ViewAccountComponent = class ViewAccountComponent {
-    constructor() { }
+    constructor(router) {
+        this.router = router;
+    }
     ngOnInit() {
     }
+    back() {
+        this.router.navigate(["/account"]);
+    }
+    ;
 };
+ViewAccountComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
 ViewAccountComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-view-account',
@@ -579,13 +587,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewListingsComponent", function() { return ViewListingsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 let ViewListingsComponent = class ViewListingsComponent {
-    constructor() { }
+    constructor(router) {
+        this.router = router;
+    }
     ngOnInit() {
     }
+    back() {
+        this.router.navigate(["/account"]);
+    }
+    ;
 };
+ViewListingsComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
 ViewListingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-view-listings',
@@ -812,6 +831,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _event_service__WEBPACK_IMPORTED_MODULE_17__["EventService"],
             _auth_service__WEBPACK_IMPORTED_MODULE_10__["AuthService"],
             _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"],
+            _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_22__["AddListingComponent"],
             {
                 provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HTTP_INTERCEPTORS"],
                 useClass: _token_interceptor_service__WEBPACK_IMPORTED_MODULE_19__["TokenInterceptorService"],
@@ -974,24 +994,31 @@ let EventService = class EventService {
         this.entryUrl = "register/entries";
         this.listingUrl = "listing";
     }
-    getEvents() {
-        return this.http.get(this._url);
+    getListing(id) {
+        const url = `${this.listingUrl}/${id}`;
+        return this.http.get(url);
     }
-    getListing() {
+    ;
+    // getRegister(id : String): Observable<Registration> {
+    //   const url = `${this._url}/${id}`;
+    //   return this.http.get<Registration>(url)
+    // }
+    getRegister(id) {
+        const url = `${this._url}/${id}`;
+        return this.http.get(url);
+    }
+    getListings() {
         return this.http.get(this.listingUrl);
     }
-    getSpecial() {
-        return this.http.get(this._url);
-    }
+    ;
     getAccount(user) {
         return this.http.get(this.getAccountUrl, user);
     }
+    ;
     accountLogin(user) {
         return this.http.post(this.loginurl, user);
     }
-    makeEntries(user) {
-        return this.http.post(this.entryUrl, user);
-    }
+    ;
     addListing(user) {
         return this.http.post(this.listingUrl, user);
     }
@@ -1045,9 +1072,6 @@ let EventsComponent = class EventsComponent {
         this.events = [];
     }
     ngOnInit() {
-        this.eventService.getEvents().subscribe(data => {
-            this.events = data;
-        });
     }
 };
 EventsComponent.ctorParameters = () => [
@@ -1090,13 +1114,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _event_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../event.service */ "./src/app/event.service.ts");
+
 
 
 let HomeComponent = class HomeComponent {
-    constructor() { }
+    constructor(eventService) {
+        this.eventService = eventService;
+        this.papa = "5e0d71050ea73e2c18b261ea";
+        this.papa1 = "5e084f7b1a833e359cab7edd";
+        this.papa2 = "5e0d727a0ea73e2c18b261eb";
+        this.listing = [];
+        this.listing1 = [];
+        this.listing2 = [];
+    }
     ngOnInit() {
+        this.eventService.getListing(this.papa).subscribe(data => {
+            this.listing = data;
+        });
+        this.eventService.getListing(this.papa1).subscribe(data => {
+            this.listing1 = data;
+        });
+        this.eventService.getListing(this.papa2).subscribe(data => {
+            this.listing2 = data;
+        });
     }
 };
+HomeComponent.ctorParameters = () => [
+    { type: _event_service__WEBPACK_IMPORTED_MODULE_2__["EventService"] }
+];
 HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-home',
@@ -1136,28 +1182,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _event_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../event.service */ "./src/app/event.service.ts");
 /* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../auth.service */ "./src/app/auth.service.ts");
+/* harmony import */ var _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../account/add-listing/add-listing.component */ "./src/app/account/add-listing/add-listing.component.ts");
+
 
 
 
 
 let ListingsComponent = class ListingsComponent {
-    constructor(eventService, authService) {
+    constructor(eventService, authService, addlisting) {
         this.eventService = eventService;
         this.authService = authService;
+        this.addlisting = addlisting;
         this.listings = [];
+        this.listing = [];
+        this.papa = "chandra";
     }
     ngOnInit() {
-        this.eventService.getSpecial().subscribe(data => {
-            this.specialEvent = data;
-            this.eventService.getListing().subscribe(data => {
-                this.listings = data;
-            });
+        this.eventService.getListings().subscribe(data => {
+            this.listings = data;
+            console.log(this.papa);
+        });
+        // this.eventService.getListing(this.papa).subscribe(data => {
+        //   this.listing = data;
+        // });
+        this.eventService.getRegister(this.papa).subscribe(data => {
+            this.listing = data;
         });
     }
 };
 ListingsComponent.ctorParameters = () => [
     { type: _event_service__WEBPACK_IMPORTED_MODULE_2__["EventService"] },
-    { type: _auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] }
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] },
+    { type: _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_4__["AddListingComponent"] }
 ];
 ListingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1167,11 +1223,6 @@ ListingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     })
 ], ListingsComponent);
 
-// ngOnInit() {
-//   this.authService.getListing().subscribe(data => {
-//     this.listings = data;
-//   });
-// }
 
 
 /***/ }),
@@ -1231,12 +1282,24 @@ let LoginComponent = class LoginComponent {
             this.fn = this.loginForm.value._id;
         });
     }
+    // export class LoginService{
+    //   @Output() fireIsLoggedIn: EventEmitter<any> = new EventEmitter<any>();
+    //   // …
+    //   loginUser(username: string, password: string) {
+    //     if (correctPassword) {
+    //       this.fireIsLoggedIn.emit(customObject); // you can pass here whatever you want
+    //     }
+    //   }
+    //   getEmitter() {
+    //     return this.fireIsLoggedIn;
+    //   }
+    // }
     ngOnInit() {
         this.empty = this.full;
         this.authService.getAccount(this.loginForm.value._id).subscribe(data => {
             this.detail2 = data;
             console.log("cant see anything");
-            console.log(data);
+            //console.log(this.token); 
         });
     }
 };
@@ -1310,7 +1373,7 @@ let RegisterComponent = class RegisterComponent {
     onSubmit() {
         this.authService.register(this.registerForm.value).subscribe(res => {
             console.log(res);
-            //localStorage.setItem('token', res.token)
+            localStorage.setItem('token', res.token);
             // this.registerForm.reset()
             this.router.navigate(["/login"]);
         });

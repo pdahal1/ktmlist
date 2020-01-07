@@ -33,4 +33,16 @@ router.post('/', (req, res) => {
 	});
 });
 
+router.get("/:id", (req, res) => {
+	Listings.findById(req.params.id, (err, doc) => {
+		if (!err) {
+			res.send(doc);
+		} else {
+			console.log(
+				"error in getting the data" + JSON.stringify(err, undefined, 2)
+			);
+		}
+	}); 
+}); 
+
 module.exports = router; 

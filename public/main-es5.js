@@ -51,7 +51,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n\n\n<div class=\"container\">\n    <div class=\"row mt-5\">\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/addlisting']\" routerLinkActive=\"active\"> Add Listings </Button>\n            </div>\n        </div>\n\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/viewlistings']\" routerLinkActive=\"active\">view your listings</Button>\n\n            </div>\n        </div>\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/viewaccount']\" routerLinkActive=\"active\">View your account</Button>\n\n            </div>\n        </div>\n    </div>\n</div>";
+    __webpack_exports__["default"] = "\n\n\n<div class=\"container\" style=\"background-image: url(../assets/1.JPG);\">\n    <div class=\"row mt-5\">\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/addlisting']\" routerLinkActive=\"active\"> Add Listings </Button>\n            </div>\n        </div>\n\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/viewlistings']\" routerLinkActive=\"active\">view your listings</Button>\n\n            </div>\n        </div>\n        <div class=\"col-md-4\">\n            <div class=\"card text-center\">\n                <Button [routerLink]=\"['/viewaccount']\" routerLinkActive=\"active\">View your account</Button>\n\n            </div>\n        </div>\n    </div>\n</div>";
     /***/
   },
 
@@ -71,7 +71,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n</head>\n\n<body>\n    <div class=\"container\">\n        \n        <div class=\"row\">\n            <div class=\"col 10\">\n                <form [formGroup]=\"addListingForm\" (ngSubmit)=\"onSubmit()\">\n\n\n\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Category</label>\n                        <mat-select placeholder=\"category\" formControlName=\"category\" name=\"category\" id=\"category\"\n                            class=\"form-control\">\n                            <mat-option *ngFor=\"let category of category\" [value]=\"category.value\">\n                                {{category.display}}\n                            </mat-option>\n                        </mat-select>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Heading</label>\n                        <input formControlName=\"heading\" type=\"text\" name=\"heading\" id=\"heading\" class=\"form-control\"\n                            required />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Description</label>\n                        <input formControlName=\"description\" type=\"text\" name=\"description\" id=\"description\" required\n                            class=\"form-control\" />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Cost</label>\n                        <input formControlName=\"cost\" type=\"text\" name=\"cost\" id=\"cost\" class=\"form-control\" required />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Location</label>\n                        <input formControlName=\"location\" type=\"text\" name=\"location\" id=\"location\"\n                            class=\"form-control\" />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Email</label>\n                        <input formControlName=\"email\" type=\"text\" name=\"email\" id=\"email\" class=\"form-control\" />\n                    </div>\n\n\n                    <div class=\"form-group\">\n                        <label for=\"phone\">Phone </label>\n                        <input formControlName=\"phone\" type=\"text\" name=\"phone\" id=\"phone\" class=\"form-control\" />\n                    </div>\n\n\n\n                    <button class=\"btn btn-success\">Submit</button>\n                    <button >Back</button>\n                    \n\n                </form>\n            </div>\n        </div>\n    </div>\n</body>\n\n</html>";
+    __webpack_exports__["default"] = "\n    <div class=\"container\" style=\"background-image: url(../assets/1.JPG);\">\n\n        <div class=\"row\">\n            <div class=\"col 10\">\n                <form [formGroup]=\"addListingForm\" (ngSubmit)=\"onSubmit()\">\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Category</label>\n                        <mat-select placeholder=\"category\" formControlName=\"category\" name=\"category\" id=\"category\"\n                            class=\"form-control\">\n                            <mat-option *ngFor=\"let category of category\" [value]=\"category\">\n                                {{category}}\n                            </mat-option>\n                        </mat-select>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Heading</label>\n                        <input formControlName=\"heading\" type=\"text\" name=\"heading\" id=\"heading\" class=\"form-control\"\n                            required />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Description</label>\n                        <input formControlName=\"description\" type=\"text\" name=\"description\" id=\"description\" required\n                            class=\"form-control\" />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Cost</label>\n                        <input formControlName=\"cost\" type=\"text\" name=\"cost\" id=\"cost\" class=\"form-control\" required />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Location</label>\n                        <input formControlName=\"location\" type=\"text\" name=\"location\" id=\"location\"\n                            class=\"form-control\" />\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"lastName\">Email</label>\n                        <input formControlName=\"email\" type=\"text\" name=\"email\" id=\"email\" class=\"form-control\" />\n                    </div>\n\n\n                    <div class=\"form-group\">\n                        <label for=\"phone\">Phone </label>\n                        <input formControlName=\"phone\" type=\"text\" name=\"phone\" id=\"phone\" class=\"form-control\" />\n                    </div>\n\n                    <button class=\"btn btn-success\">Submit</button>\n                    \n                </form>\n                <button (click)=\"back()\">Back</button>\n            </div>\n        </div>\n    </div>\n";
     /***/
   },
 
@@ -91,7 +91,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container\">\nyou will be able to review your account here\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container\">\nyou will be able to review your account here\n<button (click)=\"back()\">Back</button>\n</div>\n\n";
     /***/
   },
 
@@ -111,7 +111,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container\">\r\nyou can view your listings here. \r\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container\">\r\n    you can view your listings here.  \r\n<button (click)=\"back()\">Back</button>\r\n</div>\r\n";
     /***/
   },
 
@@ -171,7 +171,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!-- <div class=\"container\">\n    <img src=\"../assets/kathmandu.jpg\" alt=\"\"> \n</div> -->\n\n<div class=\"container\">\n    <h1>List Everything Here!!!</h1>\n    \n</div>";
+    __webpack_exports__["default"] = "<div class=\"container\" style=\"background-image: url(../assets/1.JPG);\">\n    <div class=\"row\">\n        <div class=\"col-4\">\n            <!-- Hello -->\n        </div>\n        <div class=\"col-4\">\n            <div id=\"carouselExampleSlidesOnly\" class=\"carousel slide\" data-ride=\"carousel\">\n                <div class=\"carousel-inner\">\n                    <div class=\"carousel-item active\">\n                        <div class=\"container\">\n                            <div class=\"row mt-5 \">\n\n                                <div class=\"card text-center \">\n                                    <div class=\"card-body\">\n                                        <div class=\"check\">\n                                            <h4>{{listing.heading}}</h4>\n                                        </div>\n                                        <p></p>\n                                        <p class=\"card-text\">{{ listing.category }}</p>\n                                        <p class=\"card-text\">{{ listing.description }}</p>\n                                        <p class=\"card-text\">{{ listing.email }}</p>\n                                        <p class=\"card-text\">{{ listing.phone }}</p>\n                                    </div>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"carousel-item\">\n                        <div class=\"container\">\n                            <div class=\"row mt-5 \">\n\n                                <div class=\"card text-center \">\n                                    <div class=\"card-body\">\n                                        <div class=\"check\">\n                                            <h4>{{listing1.heading}}</h4>\n                                        </div>\n                                        <p></p>\n                                        <p class=\"card-text\">{{ listing1.category }}</p>\n                                        <p class=\"card-text\">{{ listing1.description }}</p>\n                                        <p class=\"card-text\">{{ listing1.email }}</p>\n                                        <p class=\"card-text\">{{ listing1.phone }}</p>\n                                    </div>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"carousel-item\">\n                        <div class=\"container\">\n                            <div class=\"row mt-5 \">\n\n                                <div class=\"card text-center \">\n                                    <div class=\"card-body\">\n                                        <div class=\"check\">\n                                            <h4>{{listing2.heading}}</h4>\n                                        </div>\n                                        <p></p>\n                                        <p class=\"card-text\">{{ listing2.category }}</p>\n                                        <p class=\"card-text\">{{ listing2.description }}</p>\n                                        <p class=\"card-text\">{{ listing2.email }}</p>\n                                        <p class=\"card-text\">{{ listing2.phone }}</p>\n                                    </div>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-4\">\n            <!-- Hello -->\n        </div>\n    </div>\n</div>";
     /***/
   },
 
@@ -191,7 +191,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<div class=\"container\">\n<div class=\"row mt-5 \">\n  <div class=\"col-md-4 mb-3\" *ngFor=\"let listings of listings\">\n    <div class=\"card text-center \">\n      <div class=\"card-body\">\n        <div class=\"check\">\n          <h4>{{listings.heading}}</h4>\n        </div>\n        <p></p>\n        <p class=\"card-text\">{{ listings.description }}</p>\n        <p class=\"card-text\">{{ listings.email }}</p>\n        <p class=\"card-text\">{{ listings.phone }}</p>\n      </div>\n    </div>\n  </div>\n</div>\n</div>";
+    __webpack_exports__["default"] = "\n\n\n<div class=\"container\"  >\n  <div style=\"background-image: url(../assets/1.JPG);\">\n  <div class=\"row mt-5 \">\n    <div class=\"col-md-4 mb-3\" *ngFor=\"let category of this.addlisting.category\">\n      <div class=\"card text-center \">\n        <div class=\"card-body\">\n          {{category}}\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"row mt-5 \">\n    <div class=\"col-md-4 mb-3\" *ngFor=\"let listings of listings\">\n      <div class=\"card text-center \">\n        <div class=\"card-body\">\n          <div class=\"check\">\n            <h4>{{listings.heading}}</h4>\n          </div>\n          <p></p>\n          <p class=\"card-text\">{{ listings.category }}</p>\n          <p class=\"card-text\">{{ listings.description }}</p>\n          <p class=\"card-text\">{{ listings.email }}</p>\n          <p class=\"card-text\">{{ listings.phone }}</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n</div>\n\n";
     /***/
   },
 
@@ -211,7 +211,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n  </head>\n  <div class=\"container\">\n  <body>\n    <mat-card class=\"md-6\">\n      <div class=\"row\">\n        <div class=\"col md-6\">\n          <mat-card-title>Login Form</mat-card-title>\n          <form (ngSubmit)=\"login()\" [formGroup]=\"loginForm\">\n\n            <div>\n              <label for=\"email\">Email</label>\n              <input type=\"text\" formControlName=\"_id\" class=\"form-control\" />\n            </div>\n\n            <div>\n              <label for=\"email\">Password</label>\n              <input\n                type=\"password\"\n                formControlName=\"password\"\n                class=\"form-control\"\n              />\n            </div>\n\n            <div class=\"pt-2\">\n              <button class=\"btn btn-primary\">Submit</button>\n            </div>\n          </form>\n        </div>\n      </div>\n    </mat-card>\n  </body>\n</div>\n</html>\n";
+    __webpack_exports__["default"] = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n  </head>\n  <div class=\"container\" style=\"background-image: url(../assets/1.JPG);\">\n  <body>\n    <mat-card class=\"md-6\">\n      <div class=\"row\">\n        <div class=\"col md-6\">\n          <mat-card-title>Login Form</mat-card-title>\n          <form (ngSubmit)=\"login()\" [formGroup]=\"loginForm\">\n\n            <div>\n              <label for=\"email\">Email</label>\n              <input type=\"text\" formControlName=\"_id\" class=\"form-control\" />\n            </div>\n\n            <div>\n              <label for=\"email\">Password</label>\n              <input\n                type=\"password\"\n                formControlName=\"password\"\n                class=\"form-control\"\n              />\n            </div>\n\n            <div class=\"pt-2\">\n              <button class=\"btn btn-primary\">Submit</button>\n            </div>\n          </form>\n        </div>\n      </div>\n    </mat-card>\n  </body>\n</div>\n</html>\n";
     /***/
   },
 
@@ -231,7 +231,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <title>Document</title>\n  </head>\n  <body>\n    <div class=\"container\">\n      <h1>Register Form</h1>\n      <div class=\"row\">\n        <div class=\"col 10\">\n          <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\">\n\n          \n\n            <div class=\"form-group\">\n              <label for=\"firstName\">first name</label>\n              <input\n                formControlName=\"firstName\"\n                type=\"text\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"lastName\">Last name</label>\n              <input\n                formControlName=\"lastName\"\n                type=\"text\"\n                name=\"lastName\"\n                id=\"lastName\"\n                class=\"form-control\"\n                required \n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"phone\">Phone </label>\n              <input\n                formControlName=\"phone\"\n                type=\"text\"\n                name=\"phone\"\n                id=\"phone\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"email\"> Email</label>\n              <input\n                formControlName=\"_id\"\n                type=\"text\"\n                name=\"email\"\n                id=\"email\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n\n            <div class=\"form-group\">\n              <label for=\"password\">password</label>\n              <input\n                formControlName=\"password\"\n                type=\"password\"\n                name=\"password\"\n                id=\"password\"\n                class=\"form-control\"\n                required\n              />\n            </div>\n            <button class=\"btn btn-success\">Submit</button>\n          </form>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n";
+    __webpack_exports__["default"] = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n  <title>Document</title>\n</head>\n\n<body>\n  <div class=\"container\" style=\"background-image: url(../assets/1.JPG);\">\n    <h1>Register Form</h1>\n    <div class=\"row\">\n      <div class=\"col 10\">\n        <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\">\n\n\n\n          <div class=\"form-group\">\n            <label for=\"firstName\">first name</label>\n            <input formControlName=\"firstName\" type=\"text\" class=\"form-control\" required />\n          </div>\n\n          <div class=\"form-group\">\n            <label for=\"lastName\">Last name</label>\n            <input formControlName=\"lastName\" type=\"text\" name=\"lastName\" id=\"lastName\" class=\"form-control\" required />\n          </div>\n\n          <!-- <div class=\"form-group\">\n              <label for=\"phone\">Phone </label>\n              <input\n                formControlName=\"phone\"\n                type=\"text\"\n                name=\"phone\"\n                id=\"phone\"\n                class=\"form-control\"\n                required\n              />\n            </div> -->\n\n          <div class=\"form-group\">\n            <label for=\"email\"> Phone</label>\n            <input formControlName=\"phone\" type=\"text\" name=\"phone\" id=\"phone\" class=\"form-control\" required\n              minlength=\"7\" />\n\n          </div>\n\n          <!-- <input id=\"name\" name=\"name\" class=\"form-control\"\n      required minlength=\"4\" appForbiddenName=\"bob\"\n      [(ngModel)]=\"hero.name\" #name=\"ngModel\" > -->\n\n\n\n\n          <div class=\"form-group\">\n            <label for=\"email\"> Email</label>\n            <input formControlName=\"_id\" type=\"text\" name=\"email\" id=\"email\" class=\"form-control\" required\n              minlength=\"7\" />\n          </div>\n\n          <div class=\"form-group\">\n            <label for=\"password\">password</label>\n            <input formControlName=\"password\" type=\"password\" name=\"password\" id=\"password\" class=\"form-control\"\n              required minlength=\"4\" />\n\n          </div>\n          <button class=\"btn btn-success\">Submit</button>\n        </form>\n      </div>\n    </div>\n  </div>\n</body>\n\n</html>";
     /***/
   },
 
@@ -950,27 +950,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.router = router;
         this.fb = fb;
-        this.eventService = eventService; //category: any = ['Food', 'clothing', 'Entertainment', 'Service', 'Fixing']; 
-
-        this.category = [{
-          value: 'Food',
-          display: 'Food'
-        }, {
-          value: 'Entertainment',
-          display: 'Entertainment'
-        }, {
-          value: 'Service',
-          display: 'Service'
-        }, {
-          value: 'Clothing',
-          display: 'Clothing'
-        }, {
-          value: 'Fixing',
-          display: 'Fixing'
-        }, {
-          value: 'Rentals',
-          display: 'Rentals'
-        }];
+        this.eventService = eventService;
+        this.category = ['Food', 'Clothing', 'Entertainment', 'Service', 'Fixing', 'Rentals'];
         this.addListingForm = this.fb.group({
           _id: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
           category: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
@@ -993,6 +974,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
             _this.router.navigate(["/listings"]);
           });
+        }
+      }, {
+        key: "back",
+        value: function back() {
+          this.router.navigate(["/account"]);
         }
       }, {
         key: "ngOnInit",
@@ -1075,21 +1061,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
 
     var ViewAccountComponent =
     /*#__PURE__*/
     function () {
-      function ViewAccountComponent() {
+      function ViewAccountComponent(router) {
         _classCallCheck(this, ViewAccountComponent);
+
+        this.router = router;
       }
 
       _createClass(ViewAccountComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "back",
+        value: function back() {
+          this.router.navigate(["/account"]);
+        }
       }]);
 
       return ViewAccountComponent;
     }();
+
+    ViewAccountComponent.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      }];
+    };
 
     ViewAccountComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-view-account',
@@ -1154,21 +1159,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
 
     var ViewListingsComponent =
     /*#__PURE__*/
     function () {
-      function ViewListingsComponent() {
+      function ViewListingsComponent(router) {
         _classCallCheck(this, ViewListingsComponent);
+
+        this.router = router;
       }
 
       _createClass(ViewListingsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "back",
+        value: function back() {
+          this.router.navigate(["/account"]);
+        }
       }]);
 
       return ViewListingsComponent;
     }();
+
+    ViewListingsComponent.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      }];
+    };
 
     ViewListingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-view-listings',
@@ -1612,7 +1636,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _register_register_component__WEBPACK_IMPORTED_MODULE_6__["RegisterComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"], _events_events_component__WEBPACK_IMPORTED_MODULE_8__["EventsComponent"], _listings_listings_component__WEBPACK_IMPORTED_MODULE_20__["ListingsComponent"], _account_account_component__WEBPACK_IMPORTED_MODULE_21__["AccountComponent"], _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_22__["AddListingComponent"], _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_23__["ViewListingsComponent"], _account_view_account_view_account_component__WEBPACK_IMPORTED_MODULE_24__["ViewAccountComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_25__["HomeComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["BrowserAnimationsModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_12__["MatInputModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_15__["MatButtonModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_13__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_14__["MatChipsModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_16__["MatCardModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_18__["MatSelectModule"]],
-      providers: [_auth_service__WEBPACK_IMPORTED_MODULE_10__["AuthService"], _event_service__WEBPACK_IMPORTED_MODULE_17__["EventService"], _auth_service__WEBPACK_IMPORTED_MODULE_10__["AuthService"], _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"], {
+      providers: [_auth_service__WEBPACK_IMPORTED_MODULE_10__["AuthService"], _event_service__WEBPACK_IMPORTED_MODULE_17__["EventService"], _auth_service__WEBPACK_IMPORTED_MODULE_10__["AuthService"], _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"], _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_22__["AddListingComponent"], {
         provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HTTP_INTERCEPTORS"],
         useClass: _token_interceptor_service__WEBPACK_IMPORTED_MODULE_19__["TokenInterceptorService"],
         multi: true
@@ -1883,19 +1907,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       _createClass(EventService, [{
-        key: "getEvents",
-        value: function getEvents() {
-          return this.http.get(this._url);
-        }
-      }, {
         key: "getListing",
-        value: function getListing() {
-          return this.http.get(this.listingUrl);
+        value: function getListing(id) {
+          var url = "".concat(this.listingUrl, "/").concat(id);
+          return this.http.get(url);
         }
       }, {
-        key: "getSpecial",
-        value: function getSpecial() {
-          return this.http.get(this._url);
+        key: "getRegister",
+        // getRegister(id : String): Observable<Registration> {
+        //   const url = `${this._url}/${id}`;
+        //   return this.http.get<Registration>(url)
+        // }
+        value: function getRegister(id) {
+          var url = "".concat(this._url, "/").concat(id);
+          return this.http.get(url);
+        }
+      }, {
+        key: "getListings",
+        value: function getListings() {
+          return this.http.get(this.listingUrl);
         }
       }, {
         key: "getAccount",
@@ -1906,11 +1936,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "accountLogin",
         value: function accountLogin(user) {
           return this.http.post(this.loginurl, user);
-        }
-      }, {
-        key: "makeEntries",
-        value: function makeEntries(user) {
-          return this.http.post(this.entryUrl, user);
         }
       }, {
         key: "addListing",
@@ -2004,13 +2029,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       _createClass(EventsComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {
-          var _this2 = this;
-
-          this.eventService.getEvents().subscribe(function (data) {
-            _this2.events = data;
-          });
-        }
+        value: function ngOnInit() {}
       }]);
 
       return EventsComponent;
@@ -2085,21 +2104,53 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _event_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../event.service */
+    "./src/app/event.service.ts");
 
     var HomeComponent =
     /*#__PURE__*/
     function () {
-      function HomeComponent() {
+      function HomeComponent(eventService) {
         _classCallCheck(this, HomeComponent);
+
+        this.eventService = eventService;
+        this.papa = "5e0d71050ea73e2c18b261ea";
+        this.papa1 = "5e084f7b1a833e359cab7edd";
+        this.papa2 = "5e0d727a0ea73e2c18b261eb";
+        this.listing = [];
+        this.listing1 = [];
+        this.listing2 = [];
       }
 
       _createClass(HomeComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          var _this2 = this;
+
+          this.eventService.getListing(this.papa).subscribe(function (data) {
+            _this2.listing = data;
+          });
+          this.eventService.getListing(this.papa1).subscribe(function (data) {
+            _this2.listing1 = data;
+          });
+          this.eventService.getListing(this.papa2).subscribe(function (data) {
+            _this2.listing2 = data;
+          });
+        }
       }]);
 
       return HomeComponent;
     }();
+
+    HomeComponent.ctorParameters = function () {
+      return [{
+        type: _event_service__WEBPACK_IMPORTED_MODULE_2__["EventService"]
+      }];
+    };
 
     HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-home',
@@ -2176,16 +2227,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ../auth.service */
     "./src/app/auth.service.ts");
+    /* harmony import */
+
+
+    var _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../account/add-listing/add-listing.component */
+    "./src/app/account/add-listing/add-listing.component.ts");
 
     var ListingsComponent =
     /*#__PURE__*/
     function () {
-      function ListingsComponent(eventService, authService) {
+      function ListingsComponent(eventService, authService, addlisting) {
         _classCallCheck(this, ListingsComponent);
 
         this.eventService = eventService;
         this.authService = authService;
+        this.addlisting = addlisting;
         this.listings = [];
+        this.listing = [];
+        this.papa = "chandra";
       }
 
       _createClass(ListingsComponent, [{
@@ -2193,12 +2253,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this3 = this;
 
-          this.eventService.getSpecial().subscribe(function (data) {
-            _this3.specialEvent = data;
+          this.eventService.getListings().subscribe(function (data) {
+            _this3.listings = data;
+            console.log(_this3.papa);
+          }); // this.eventService.getListing(this.papa).subscribe(data => {
+          //   this.listing = data;
+          // });
 
-            _this3.eventService.getListing().subscribe(function (data) {
-              _this3.listings = data;
-            });
+          this.eventService.getRegister(this.papa).subscribe(function (data) {
+            _this3.listing = data;
           });
         }
       }]);
@@ -2211,6 +2274,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         type: _event_service__WEBPACK_IMPORTED_MODULE_2__["EventService"]
       }, {
         type: _auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"]
+      }, {
+        type: _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_4__["AddListingComponent"]
       }];
     };
 
@@ -2222,12 +2287,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./listings.component.css */
       "./src/app/listings/listings.component.css")).default]
-    })], ListingsComponent); // ngOnInit() {
-    //   this.authService.getListing().subscribe(data => {
-    //     this.listings = data;
-    //   });
-    // }
-
+    })], ListingsComponent);
     /***/
   },
 
@@ -2333,7 +2393,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
             _this4.fn = _this4.loginForm.value._id;
           });
-        }
+        } // export class LoginService{
+        //   @Output() fireIsLoggedIn: EventEmitter<any> = new EventEmitter<any>();
+        //   // …
+        //   loginUser(username: string, password: string) {
+        //     if (correctPassword) {
+        //       this.fireIsLoggedIn.emit(customObject); // you can pass here whatever you want
+        //     }
+        //   }
+        //   getEmitter() {
+        //     return this.fireIsLoggedIn;
+        //   }
+        // }
+
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
@@ -2342,8 +2414,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.empty = this.full;
           this.authService.getAccount(this.loginForm.value._id).subscribe(function (data) {
             _this5.detail2 = data;
-            console.log("cant see anything");
-            console.log(data);
+            console.log("cant see anything"); //console.log(this.token); 
           });
         }
       }]);
@@ -2475,8 +2546,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var _this6 = this;
 
           this.authService.register(this.registerForm.value).subscribe(function (res) {
-            console.log(res); //localStorage.setItem('token', res.token)
-            // this.registerForm.reset()
+            console.log(res);
+            localStorage.setItem('token', res.token); // this.registerForm.reset()
 
             _this6.router.navigate(["/login"]);
           });

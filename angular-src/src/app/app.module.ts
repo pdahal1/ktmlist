@@ -58,8 +58,8 @@ import { HomeComponent } from './home/home.component';
 		AuthService,
 		EventService,
 		AuthService,
-
 		LoginComponent,
+		AddListingComponent,
 
 		{
 			provide: HTTP_INTERCEPTORS,

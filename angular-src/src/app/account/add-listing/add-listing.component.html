@@ -1,29 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-</head>
+    <div class="container" style="background-image: url(../assets/1.JPG);">
 
-<body>
-    <div class="container">
-        
         <div class="row">
             <div class="col 10">
                 <form [formGroup]="addListingForm" (ngSubmit)="onSubmit()">
-
-
-
 
                     <div class="form-group">
                         <label for="lastName">Category</label>
                         <mat-select placeholder="category" formControlName="category" name="category" id="category"
                             class="form-control">
-                            <mat-option *ngFor="let category of category" [value]="category.value">
-                                {{category.display}}
+                            <mat-option *ngFor="let category of category" [value]="category">
+                                {{category}}
                             </mat-option>
                         </mat-select>
                     </div>
@@ -62,16 +49,10 @@
                         <input formControlName="phone" type="text" name="phone" id="phone" class="form-control" />
                     </div>
 
-
-
                     <button class="btn btn-success">Submit</button>
-                    <button >Back</button>
                     
-
                 </form>
+                <button (click)="back()">Back</button>
             </div>
         </div>
     </div>
-</body>
-
-</html>

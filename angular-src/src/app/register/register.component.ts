@@ -33,7 +33,7 @@ export class RegisterComponent implements OnInit {
   
         this.authService.register(this.registerForm.value).subscribe(res => {
       console.log(res);
-      //localStorage.setItem('token', res.token)
+      localStorage.setItem('token', res.token)
       // this.registerForm.reset()
       this.router.navigate(["/login"]);
     });

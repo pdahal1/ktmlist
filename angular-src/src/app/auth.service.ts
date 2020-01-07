@@ -52,8 +52,6 @@ export class AuthService {
     this.router.navigate(['/listings'])
   }
 
-  // getListing(){
-  //   return this.http.get<any>(this.listingUrl); 
-  // }; 
+ 
 
 }

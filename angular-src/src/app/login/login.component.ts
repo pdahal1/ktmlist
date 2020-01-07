@@ -45,14 +45,29 @@ export class LoginComponent implements OnInit {
     });
    
   }
+  // export class LoginService{
+//   @Output() fireIsLoggedIn: EventEmitter<any> = new EventEmitter<any>();
+//   // …
+//   loginUser(username: string, password: string) {
+//     if (correctPassword) {
+//       this.fireIsLoggedIn.emit(customObject); // you can pass here whatever you want
+//     }
+//   }
+ 
+//   getEmitter() {
+//     return this.fireIsLoggedIn;
+//   }
+// }
 
   ngOnInit() {
    this.empty= this.full;
    this.authService.getAccount(this.loginForm.value._id).subscribe(data =>{
     this.detail2= data; 
     console.log("cant see anything"); 
-    console.log(data); 
+    //console.log(this.token); 
   });
    
   }
 }
+
+
