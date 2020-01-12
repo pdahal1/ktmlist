@@ -110,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"background-image: url(../assets/1.JPG);\">\n    <div class=\"row\">\n        <div class=\"col-4\">\n            <!-- Hello -->\n        </div>\n        <div class=\"col-4\">\n            <div id=\"carouselExampleSlidesOnly\" class=\"carousel slide\" data-ride=\"carousel\">\n                <div class=\"carousel-inner\">\n                    <div class=\"carousel-item active\">\n                        <div class=\"container\">\n                            <div class=\"row mt-5 \">\n\n                                <div class=\"card text-center \">\n                                    <div class=\"card-body\">\n                                        <div class=\"check\">\n                                            <h4>{{listing.heading}}</h4>\n                                        </div>\n                                        <p></p>\n                                        <p class=\"card-text\">{{ listing.category }}</p>\n                                        <p class=\"card-text\">{{ listing.description }}</p>\n                                        <p class=\"card-text\">{{ listing.email }}</p>\n                                        <p class=\"card-text\">{{ listing.phone }}</p>\n                                    </div>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"carousel-item\">\n                        <div class=\"container\">\n                            <div class=\"row mt-5 \">\n\n                                <div class=\"card text-center \">\n                                    <div class=\"card-body\">\n                                        <div class=\"check\">\n                                            <h4>{{listing1.heading}}</h4>\n                                        </div>\n                                        <p></p>\n                                        <p class=\"card-text\">{{ listing1.category }}</p>\n                                        <p class=\"card-text\">{{ listing1.description }}</p>\n                                        <p class=\"card-text\">{{ listing1.email }}</p>\n                                        <p class=\"card-text\">{{ listing1.phone }}</p>\n                                    </div>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"carousel-item\">\n                        <div class=\"container\">\n                            <div class=\"row mt-5 \">\n\n                                <div class=\"card text-center \">\n                                    <div class=\"card-body\">\n                                        <div class=\"check\">\n                                            <h4>{{listing2.heading}}</h4>\n                                        </div>\n                                        <p></p>\n                                        <p class=\"card-text\">{{ listing2.category }}</p>\n                                        <p class=\"card-text\">{{ listing2.description }}</p>\n                                        <p class=\"card-text\">{{ listing2.email }}</p>\n                                        <p class=\"card-text\">{{ listing2.phone }}</p>\n                                    </div>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-4\">\n            <!-- Hello -->\n        </div>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\" style=\"background-image: url(../assets/1.JPG);\">\n    <div class=\"row\">\n        <div class=\"col-4\">\n            <!-- Hello -->\n        </div>\n        <div class=\"col-4\">\n            <div id=\"carouselExampleSlidesOnly\" class=\"carousel slide\" data-ride=\"carousel\">\n                <div class=\"carousel-inner\">\n                    <div class=\"carousel-item active\">\n                        <div class=\"container\">\n                            <div class=\"row mt-5 \">\n\n                                <div class=\"card text-center \">\n                                    <div class=\"card-body\">\n                                        <div class=\"check\">\n                                            <h4>{{listing.heading}}</h4>\n                                        </div>\n                                        <p></p>\n                                        <p class=\"card-text\">{{ listing.category }}</p>\n                                        <p class=\"card-text\">{{ listing.description }}</p>\n                                        <p class=\"card-text\">{{ listing.email }}</p>\n                                        <p class=\"card-text\">{{ listing.phone }}</p>\n                                    </div>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"carousel-item\">\n                        <div class=\"container\">\n                            <div class=\"row mt-5 \">\n\n                                <div class=\"card text-center \">\n                                    <div class=\"card-body\">\n                                        <div class=\"check\">\n                                            <h4>{{listing1.heading}}</h4>\n                                        </div>\n                                        <p></p>\n                                        <p class=\"card-text\">{{ listing1.category }}</p>\n                                        <p class=\"card-text\">{{ listing1.description }}</p>\n                                        <p class=\"card-text\">{{ listing1.email }}</p>\n                                        <p class=\"card-text\">{{ listing1.phone }}</p>\n                                    </div>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"carousel-item\">\n                        <div class=\"container\">\n                            <div class=\"row mt-5 \">\n\n                                <div class=\"card text-center \">\n                                    <div class=\"card-body\">\n                                        <div class=\"check\">\n                                            <h4>{{listing2.heading}}</h4>\n                                        </div>\n                                        <p></p>\n                                        <p class=\"card-text\">{{ listing2.category }}</p>\n                                        <p class=\"card-text\">{{ listing2.description }}</p>\n                                        <p class=\"card-text\">{{ listing2.email }}</p>\n                                        <p class=\"card-text\">{{ listing2.phone }}</p>\n                                    </div>\n                                </div>\n\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-4\">\n            <!-- Hello -->\n        </div>\n    </div>\n    <br>\n    <br>\n    <br>\n</div>");
 
 /***/ }),
 
@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n\n\n<div class=\"container\"  >\n  <div style=\"background-image: url(../assets/1.JPG);\">\n  <div class=\"row mt-5 \">\n    <div class=\"col-md-4 mb-3\" *ngFor=\"let category of this.addlisting.category\">\n      <div class=\"card text-center \">\n        <div class=\"card-body\">\n          {{category}}\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"row mt-5 \">\n    <div class=\"col-md-4 mb-3\" *ngFor=\"let listings of listings\">\n      <div class=\"card text-center \">\n        <div class=\"card-body\">\n          <div class=\"check\">\n            <h4>{{listings.heading}}</h4>\n          </div>\n          <p></p>\n          <p class=\"card-text\">{{ listings.category }}</p>\n          <p class=\"card-text\">{{ listings.description }}</p>\n          <p class=\"card-text\">{{ listings.email }}</p>\n          <p class=\"card-text\">{{ listings.phone }}</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n</div>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n \n  \n  <mat-form-field class=\"example-form-field\">\n    <mat-label>pick a category</mat-label>\n    <mat-select [(ngModel)]=\"cat\">\n      \n      <mat-option *ngFor=\"let category of category\" [value]=\"category\">\n        {{category}}\n      </mat-option>\n    </mat-select>\n     </mat-form-field>\n     <button (click)=\"onSubmit()\"> Search</button>\n\n  <div style=\"background-image: url(../assets/1.JPG);\">\n    <div class=\"row mt-5 \">\n      <div class=\"col-md-4 mb-3\" *ngFor=\"let service of service\">\n        <div class=\"card text-center \">\n          <div class=\"card-body\">\n            <div class=\"check\">\n              <h4>{{service.heading}}</h4>\n            </div>\n            <p></p>\n            <p class=\"card-text\">{{ service.category }}</p>\n            <p class=\"card-text\">{{ service.description }}</p>\n            <p class=\"card-text\">{{ service.email }}</p>\n            <p class=\"card-text\">{{ service.phone }}</p>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"container\">\n      <div style=\"background-image: url(../assets/1.JPG);\">\n\n\n        <div class=\"row mt-5 \">\n          <div class=\"col-md-4 mb-3\" *ngFor=\"let listings of listings\">\n            <div class=\"card text-center \">\n              <div class=\"card-body\">\n                <div class=\"check\">\n                  <h4>{{listings.heading}}</h4>\n                </div>\n                <p></p>\n                <p class=\"card-text\">{{ listings.category }}</p>\n                <p class=\"card-text\">{{ listings.description }}</p>\n                <p class=\"card-text\">{{ listings.email }}</p>\n                <p class=\"card-text\">{{ listings.phone }}</p>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>");
 
 /***/ }),
 
@@ -763,13 +763,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
 /* harmony import */ var _event_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./event.service */ "./src/app/event.service.ts");
 /* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm2015/select.js");
-/* harmony import */ var _token_interceptor_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./token-interceptor.service */ "./src/app/token-interceptor.service.ts");
-/* harmony import */ var _listings_listings_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./listings/listings.component */ "./src/app/listings/listings.component.ts");
-/* harmony import */ var _account_account_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./account/account.component */ "./src/app/account/account.component.ts");
-/* harmony import */ var _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./account/add-listing/add-listing.component */ "./src/app/account/add-listing/add-listing.component.ts");
-/* harmony import */ var _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./account/view-listings/view-listings.component */ "./src/app/account/view-listings/view-listings.component.ts");
-/* harmony import */ var _account_view_account_view_account_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./account/view-account/view-account.component */ "./src/app/account/view-account/view-account.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/material/button-toggle */ "./node_modules/@angular/material/esm2015/button-toggle.js");
+/* harmony import */ var _angular_material_radio__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/material/radio */ "./node_modules/@angular/material/esm2015/radio.js");
+/* harmony import */ var _token_interceptor_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./token-interceptor.service */ "./src/app/token-interceptor.service.ts");
+/* harmony import */ var _listings_listings_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./listings/listings.component */ "./src/app/listings/listings.component.ts");
+/* harmony import */ var _account_account_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./account/account.component */ "./src/app/account/account.component.ts");
+/* harmony import */ var _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./account/add-listing/add-listing.component */ "./src/app/account/add-listing/add-listing.component.ts");
+/* harmony import */ var _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./account/view-listings/view-listings.component */ "./src/app/account/view-listings/view-listings.component.ts");
+/* harmony import */ var _account_view_account_view_account_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./account/view-account/view-account.component */ "./src/app/account/view-account/view-account.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/material/slide-toggle */ "./node_modules/@angular/material/esm2015/slide-toggle.js");
+
+
+
 
 
 
@@ -805,12 +811,12 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _register_register_component__WEBPACK_IMPORTED_MODULE_6__["RegisterComponent"],
             _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"],
             _events_events_component__WEBPACK_IMPORTED_MODULE_8__["EventsComponent"],
-            _listings_listings_component__WEBPACK_IMPORTED_MODULE_20__["ListingsComponent"],
-            _account_account_component__WEBPACK_IMPORTED_MODULE_21__["AccountComponent"],
-            _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_22__["AddListingComponent"],
-            _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_23__["ViewListingsComponent"],
-            _account_view_account_view_account_component__WEBPACK_IMPORTED_MODULE_24__["ViewAccountComponent"],
-            _home_home_component__WEBPACK_IMPORTED_MODULE_25__["HomeComponent"]
+            _listings_listings_component__WEBPACK_IMPORTED_MODULE_22__["ListingsComponent"],
+            _account_account_component__WEBPACK_IMPORTED_MODULE_23__["AccountComponent"],
+            _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_24__["AddListingComponent"],
+            _account_view_listings_view_listings_component__WEBPACK_IMPORTED_MODULE_25__["ViewListingsComponent"],
+            _account_view_account_view_account_component__WEBPACK_IMPORTED_MODULE_26__["ViewAccountComponent"],
+            _home_home_component__WEBPACK_IMPORTED_MODULE_27__["HomeComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -824,17 +830,20 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_13__["MatCheckboxModule"],
             _angular_material_chips__WEBPACK_IMPORTED_MODULE_14__["MatChipsModule"],
             _angular_material_card__WEBPACK_IMPORTED_MODULE_16__["MatCardModule"],
-            _angular_material_select__WEBPACK_IMPORTED_MODULE_18__["MatSelectModule"]
+            _angular_material_select__WEBPACK_IMPORTED_MODULE_18__["MatSelectModule"],
+            _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_19__["MatButtonToggleModule"],
+            _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_28__["MatSlideToggleModule"],
+            _angular_material_radio__WEBPACK_IMPORTED_MODULE_20__["MatRadioModule"]
         ],
         providers: [
             _auth_service__WEBPACK_IMPORTED_MODULE_10__["AuthService"],
             _event_service__WEBPACK_IMPORTED_MODULE_17__["EventService"],
             _auth_service__WEBPACK_IMPORTED_MODULE_10__["AuthService"],
             _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"],
-            _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_22__["AddListingComponent"],
+            _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_24__["AddListingComponent"],
             {
                 provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HTTP_INTERCEPTORS"],
-                useClass: _token_interceptor_service__WEBPACK_IMPORTED_MODULE_19__["TokenInterceptorService"],
+                useClass: _token_interceptor_service__WEBPACK_IMPORTED_MODULE_21__["TokenInterceptorService"],
                 multi: true
             }
         ],
@@ -1121,9 +1130,12 @@ __webpack_require__.r(__webpack_exports__);
 let HomeComponent = class HomeComponent {
     constructor(eventService) {
         this.eventService = eventService;
-        this.papa = "5e0d71050ea73e2c18b261ea";
-        this.papa1 = "5e084f7b1a833e359cab7edd";
-        this.papa2 = "5e0d727a0ea73e2c18b261eb";
+        this.papa = "5e0968c7feb4dc001717fa2a";
+        this.papa1 = "5e0975c58043cc0017b05453";
+        this.papa2 = "5e141aacfdfae800176c3a9d";
+        // papa = "5e0968c7feb4dc001717fa2a";
+        // papa1 = "5e084f7b1a833e359cab7edd";
+        // papa2 = "5e0d727a0ea73e2c18b261eb";
         this.listing = [];
         this.listing1 = [];
         this.listing2 = [];
@@ -1181,39 +1193,67 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _event_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../event.service */ "./src/app/event.service.ts");
-/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../auth.service */ "./src/app/auth.service.ts");
-/* harmony import */ var _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../account/add-listing/add-listing.component */ "./src/app/account/add-listing/add-listing.component.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../auth.service */ "./src/app/auth.service.ts");
+/* harmony import */ var _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../account/add-listing/add-listing.component */ "./src/app/account/add-listing/add-listing.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
+
 
 
 
 
 
 let ListingsComponent = class ListingsComponent {
-    constructor(eventService, authService, addlisting) {
+    constructor(eventService, fb, authService, addlisting) {
         this.eventService = eventService;
+        this.fb = fb;
         this.authService = authService;
         this.addlisting = addlisting;
         this.listings = [];
         this.listing = [];
-        this.papa = "chandra";
+        this.service = [];
+        this.papa = "5e084f7b1a833e359cab7edd";
+        this.cat = "";
+        this.category = ['Food', 'Clothing', 'Entertainment', 'Service', 'Fixing', 'Rentals'];
+        this.searchForm = this.fb.group({
+            category: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required]
+        });
+    }
+    ;
+    onSubmit() {
+        this.eventService.getListings().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(Listings => Listings.filter(Listings => Listings.category === this.cat))).subscribe(data => {
+            this.service = data;
+            console.log(this.service);
+        });
     }
     ngOnInit() {
         this.eventService.getListings().subscribe(data => {
             this.listings = data;
-            console.log(this.papa);
+            console.log("this is all the listings" + this.listings);
         });
-        // this.eventService.getListing(this.papa).subscribe(data => {
-        //   this.listing = data;
-        // });
+        this.eventService.getListing(this.papa).subscribe(data => {
+            this.listing = data;
+            console.log("this is single display " + data);
+        });
         this.eventService.getRegister(this.papa).subscribe(data => {
             this.listing = data;
         });
+        //this will help to find the items with certain category. 
+        // this.eventService.getListings().pipe(
+        //   map(Listings => Listings.filter(Listings => Listings.category === this.cat))
+        // ).subscribe(data => {
+        //   this.service = data;
+        //   console.log(this.service);
+        // });
     }
+    ;
 };
 ListingsComponent.ctorParameters = () => [
     { type: _event_service__WEBPACK_IMPORTED_MODULE_2__["EventService"] },
-    { type: _auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] },
-    { type: _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_4__["AddListingComponent"] }
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormBuilder"] },
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"] },
+    { type: _account_add_listing_add_listing_component__WEBPACK_IMPORTED_MODULE_5__["AddListingComponent"] }
 ];
 ListingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

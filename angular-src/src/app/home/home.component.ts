@@ -7,9 +7,13 @@ import { EventService } from '../event.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  papa = "5e0d71050ea73e2c18b261ea";
-  papa1 = "5e084f7b1a833e359cab7edd";
-  papa2 = "5e0d727a0ea73e2c18b261eb";
+  papa = "5e0968c7feb4dc001717fa2a";
+  papa1 = "5e0975c58043cc0017b05453";
+  papa2 = "5e141aacfdfae800176c3a9d";
+
+  // papa = "5e0968c7feb4dc001717fa2a";
+  // papa1 = "5e084f7b1a833e359cab7edd";
+  // papa2 = "5e0d727a0ea73e2c18b261eb";
   
   listing = [];
   listing1 = [];

@@ -17,7 +17,9 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { EventService } from './event.service';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatRadioModule} from '@angular/material/radio';
 
 import { TokenInterceptorService } from './token-interceptor.service';
 import { ListingsComponent } from './listings/listings.component';
@@ -26,6 +28,7 @@ import { AddListingComponent } from './account/add-listing/add-listing.component
 import { ViewListingsComponent } from './account/view-listings/view-listings.component';
 import { ViewAccountComponent } from './account/view-account/view-account.component';
 import { HomeComponent } from './home/home.component';
+import {  MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
 	declarations: [
@@ -52,7 +55,11 @@ import { HomeComponent } from './home/home.component';
 		MatCheckboxModule,
 		MatChipsModule,
 		MatCardModule, 
-		MatSelectModule
+		MatSelectModule,
+		MatButtonToggleModule,
+		MatSlideToggleModule,
+		MatRadioModule
+		
 	],
 	providers: [
 		AuthService,

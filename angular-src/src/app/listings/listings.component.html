@@ -1,34 +1,54 @@
+<div class="container">
+ 
+  
+  <mat-form-field class="example-form-field">
+    <mat-label>pick a category</mat-label>
+    <mat-select [(ngModel)]="cat">
+      
+      <mat-option *ngFor="let category of category" [value]="category">
+        {{category}}
+      </mat-option>
+    </mat-select>
+     </mat-form-field>
+     <button (click)="onSubmit()"> Search</button>
 
-
-
-<div class="container"  >
   <div style="background-image: url(../assets/1.JPG);">
-  <div class="row mt-5 ">
-    <div class="col-md-4 mb-3" *ngFor="let category of this.addlisting.category">
-      <div class="card text-center ">
-        <div class="card-body">
-          {{category}}
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row mt-5 ">
-    <div class="col-md-4 mb-3" *ngFor="let listings of listings">
-      <div class="card text-center ">
-        <div class="card-body">
-          <div class="check">
-            <h4>{{listings.heading}}</h4>
+    <div class="row mt-5 ">
+      <div class="col-md-4 mb-3" *ngFor="let service of service">
+        <div class="card text-center ">
+          <div class="card-body">
+            <div class="check">
+              <h4>{{service.heading}}</h4>
+            </div>
+            <p></p>
+            <p class="card-text">{{ service.category }}</p>
+            <p class="card-text">{{ service.description }}</p>
+            <p class="card-text">{{ service.email }}</p>
+            <p class="card-text">{{ service.phone }}</p>
           </div>
-          <p></p>
-          <p class="card-text">{{ listings.category }}</p>
-          <p class="card-text">{{ listings.description }}</p>
-          <p class="card-text">{{ listings.email }}</p>
-          <p class="card-text">{{ listings.phone }}</p>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
 
+    <div class="container">
+      <div style="background-image: url(../assets/1.JPG);">
+
+
+        <div class="row mt-5 ">
+          <div class="col-md-4 mb-3" *ngFor="let listings of listings">
+            <div class="card text-center ">
+              <div class="card-body">
+                <div class="check">
+                  <h4>{{listings.heading}}</h4>
+                </div>
+                <p></p>
+                <p class="card-text">{{ listings.category }}</p>
+                <p class="card-text">{{ listings.description }}</p>
+                <p class="card-text">{{ listings.email }}</p>
+                <p class="card-text">{{ listings.phone }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
