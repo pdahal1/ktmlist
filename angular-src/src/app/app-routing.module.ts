@@ -11,6 +11,7 @@ import { AddListingComponent } from './account/add-listing/add-listing.component
 import { ViewAccountComponent } from './account/view-account/view-account.component';
 import { ViewListingsComponent } from './account/view-listings/view-listings.component';
 import { HomeComponent } from './home/home.component';
+import { LearnComponent } from './learn/learn.component';
 
 
 
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'addlisting', component: AddListingComponent },
   { path: 'viewaccount', component: ViewAccountComponent },
   { path: 'viewlistings', component: ViewListingsComponent },
+  { path: 'learn', component: LearnComponent },
   { path: 'home', component: HomeComponent },
   { path: '*', redirectTo: '/home', pathMatch: 'full' },
    // {path: 'special' , component: SpecialComponent, canActivate: [AuthGuard]},

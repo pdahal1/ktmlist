@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { EventService } from 'src/app/event.service';
+import { LoginComponent } from 'src/app/login/login.component';
 
 @Component({
   selector: 'app-add-listing',
@@ -13,7 +14,7 @@ export class AddListingComponent implements OnInit {
   public addListingForm: FormGroup; 
   category: any = ['Food', 'Clothing', 'Entertainment', 'Service', 'Fixing', 'Rentals']; 
 
-    constructor(private router: Router, private fb: FormBuilder, private eventService: EventService) { 
+    constructor(private router: Router, private fb: FormBuilder, private eventService: EventService, private loginComponent:LoginComponent) { 
     this.addListingForm = this.fb.group({
       _id: ["", Validators.required],
       category: ["", Validators.required],

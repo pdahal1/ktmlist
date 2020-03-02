@@ -19,7 +19,8 @@ import { MatCardModule } from '@angular/material/card';
 import { EventService } from './event.service';
 import { MatSelectModule } from '@angular/material/select';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import {MatRadioModule} from '@angular/material/radio';
+import { MatRadioModule } from '@angular/material/radio';
+
 
 import { TokenInterceptorService } from './token-interceptor.service';
 import { ListingsComponent } from './listings/listings.component';
@@ -29,6 +30,7 @@ import { ViewListingsComponent } from './account/view-listings/view-listings.com
 import { ViewAccountComponent } from './account/view-account/view-account.component';
 import { HomeComponent } from './home/home.component';
 import {  MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { LearnComponent } from './learn/learn.component';
 
 @NgModule({
 	declarations: [
@@ -41,7 +43,8 @@ import {  MatSlideToggleModule } from '@angular/material/slide-toggle';
 		AddListingComponent,
 		ViewListingsComponent,
 		ViewAccountComponent,
-		HomeComponent
+		HomeComponent,
+		LearnComponent
 	],
 	imports: [
 		BrowserModule,
@@ -67,6 +70,7 @@ import {  MatSlideToggleModule } from '@angular/material/slide-toggle';
 		AuthService,
 		LoginComponent,
 		AddListingComponent,
+		AppComponent,
 
 		{
 			provide: HTTP_INTERCEPTORS,

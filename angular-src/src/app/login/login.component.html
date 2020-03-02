@@ -1,3 +1,7 @@
+<div class="container">
+  <input type="text" [(ngModel)]="userName">
+</div>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,9 +20,9 @@
 
             <div>
               <label for="email">Email</label>
-              <input type="text" formControlName="_id" class="form-control" />
+              <input type="text" formControlName="_id" [value] = "currentUser" class="form-control" />
             </div>
-
+                    
             <div>
               <label for="email">Password</label>
               <input
@@ -38,3 +42,7 @@
   </body>
 </div>
 </html>
+
+<!-- <app-root [uN]="userName"></app-root> -->
+
+{{currentUser}}

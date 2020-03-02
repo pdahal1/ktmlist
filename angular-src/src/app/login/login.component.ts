@@ -1,7 +1,12 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input, Output } from "@angular/core";
 import { Router } from "@angular/router";
 import { AuthService } from "../auth.service";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { AppComponent } from '../app.component';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { Users } from 'model/login';
+import { EventService } from '../event.service';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: "app-login",
@@ -9,17 +14,16 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
   styleUrls: ["./login.component.css"]
 })
 export class LoginComponent implements OnInit {
-  public loginForm: FormGroup;
+  public loginForm : FormGroup
   email: String;
-  detail: [];
-  detail2: [];
-  public fn: string; 
-  public fna= 4;
-
-  empty: String; 
-  full="hi"; 
-
+  //userName: String; 
+  public userName = "";
+  public currentUser = "";
+  cs: String;
+  
   constructor(
+    private appcomponent: AppComponent,
+    private eventService:EventService,
     private authService: AuthService,
     private router: Router,
     private fb: FormBuilder
@@ -30,44 +34,39 @@ export class LoginComponent implements OnInit {
     });
   }
 
+ 
+
   login() {
     this.authService.login(this.loginForm.value).subscribe(res => {
-      console.log(res);
-      this.detail= res; 
-      console.log(this.detail); 
-
+      console.log("what res" + res);
       localStorage.setItem("token", res.token);
-      this.router.navigate(["/account"]);
-      this.fn= this.loginForm.value._id;
-
-     
-      
+      this.userName = this.loginForm.value._id;
+    console.log("this is is the id " + this.userName);
+    this.router.navigate(["/account"]);
+    
     });
    
   }
-  // export class LoginService{
-//   @Output() fireIsLoggedIn: EventEmitter<any> = new EventEmitter<any>();
-//   // …
-//   loginUser(username: string, password: string) {
-//     if (correctPassword) {
-//       this.fireIsLoggedIn.emit(customObject); // you can pass here whatever you want
-//     }
-//   }
- 
-//   getEmitter() {
-//     return this.fireIsLoggedIn;
-//   }
-// }
+
+  displyUser() {
+    this.eventService.getListings().pipe(
+      map(Listings => Listings.filter(Listings => Listings.category === this.loginForm.value._id))
+    ).subscribe(data => {
+      this.cs = data;
+      console.log(this.cs);
+    });
+    
+  }
 
   ngOnInit() {
-   this.empty= this.full;
-   this.authService.getAccount(this.loginForm.value._id).subscribe(data =>{
-    this.detail2= data; 
-    console.log("cant see anything"); 
-    //console.log(this.token); 
+  this.authService.getAccount(this.loginForm.value._id).subscribe(data =>{
+      console.log("cant see anything"); 
+    
   });
-   
+    
   }
 }
+
+
 
 
